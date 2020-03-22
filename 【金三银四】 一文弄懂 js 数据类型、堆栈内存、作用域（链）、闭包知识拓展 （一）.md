@@ -8,8 +8,6 @@
 ><div>一直想着成为一个up主，正值时间挺多的，4月份左右面试的面经我会制作视频去分享，赶快捧个场吧。<a href="https://space.bilibili.com/351534170">哔哩哔哩：一百个Chocolate </a></div>
 
 
-<img src="https://img-blog.csdnimg.cn/20200321140243221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70"></img>
-
 ## 关于数据类型的基础知识
 
 ##### 基本数据类型（值类型）
@@ -105,13 +103,13 @@ NaN 不是一个有效数字，但是属于number数字类型
 
 
 ##### 第二题（执行上下文环境栈引入）
-
 ![](https://img-blog.csdnimg.cn/20200321140243221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
 
-##### 第三题（垃圾回收问题引入）
 
+##### 第三题（垃圾回收问题引入）
 有了前两个题的基础，对这题应该是轻松解决了。
 ![](https://img-blog.csdnimg.cn/20200321140323439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
 **拓展引入：**
 ![](https://img-blog.csdnimg.cn/20200321164046850.png)
 按照上述情景，请问上述两个堆内存能被收回吗？既然被创建那相对的能被回收吗？
