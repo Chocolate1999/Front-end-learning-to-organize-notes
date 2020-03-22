@@ -24,6 +24,7 @@ object:{} [] /^$/  日期对象 Math 实例对象...
 function
 ```
 
+
 ES6中新增
 
 ```javascript
