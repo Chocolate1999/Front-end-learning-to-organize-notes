@@ -1,10 +1,12 @@
 ## 关于我
 
-CSDN博客专家，研究方向:前端，算法，网络等
+文章内容多为学习记录而来，并不是直接复制粘贴形成的，文章排版以及内容都是本人整理的，希望对您有所帮助。
+
+欢迎对改善本仓库提出好的意见，也欢迎Contributor，谢谢！
 
 座右铭: 学如逆水行舟，不进则退
 
-CSDN博客地址：https://chocolate.blog.csdn.net/
+博客地址：https://chocolate.blog.csdn.net/
 
 ## 合作
 
@@ -16,14 +18,15 @@ CSDN博客地址：https://chocolate.blog.csdn.net/
 
 博客中的每篇文章都是我一字一句敲出来的，如需转载，请附上原文链接，表示对原作者的尊重。谢谢合作！
 
+
 ## 结尾
 
 <font color=chocolate>欢迎关注微信公众号：小狮子前端Vue</font>
 
 谢谢您的支持！✿✿ヽ(°▽°)ノ✿
 
-<div align="center"><img src="https://img-blog.csdnimg.cn/20200320150035731.png"></img></div>
+注：本仓库不参与商业行为，也请各位读者周知。(This warehouse is not involved in commercial activities.)
 
-
+转载使用请注明出处，谢谢！
 
 
