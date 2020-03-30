@@ -84,12 +84,100 @@ lack of junxun
 
 
 ###  解题思路
-BFS
+
+分别从三个起点开始用BFS，考虑题目的特殊性：
+
+- z和y不能走斜线，只有小h能走
+-  小h每秒最多可以移动3步
+- 输出最快军训小h所需的时间，那么就贪心一下，让小h每次都走最多步数：3步
+
+参考博文：<a href="https://blog.csdn.net/qq_43984169/article/details/105184977">传送门</a>
 
 ### AC代码
 
 ```javascript
-待补充
+#include<bits/stdc++.h>
+#define endl '\n'
+#define mst(a,b) memset(a,b,sizeof(a))
+using namespace std;
+const int maxn=1e3+5;
+int n,m;
+int vis[3][maxn][maxn];
+char mp[maxn][maxn];
+int dir[8][2]={0,1,1,0,0,-1,-1,0,1,1,1,-1,-1,-1,-1,1};
+struct node{
+    int x,y;
+};
+bool check(int x,int y,int id){ //check函数判断该点是否能走
+    if(x>=1&&x<=n&&y>=1&&y<=m&&mp[x][y]!='#'&&!vis[id][x][y]) return true;
+    return false;
+}
+queue<node> Q[3];
+bool bfs(int u){
+    int cnt=Q[u].size();
+    node now,nex;
+    while(cnt--){
+        now=Q[u].front(),Q[u].pop();
+        for(int i=0;i<8;i++){
+            if(i>=4&&(u==0||u==1)) break;    //z和y不能走斜线,只有h能走斜线
+            nex.x=now.x+dir[i][0];
+            nex.y=now.y+dir[i][1];
+            if(check(nex.x,nex.y,u)){
+                vis[u][nex.x][nex.y]=1;
+                Q[u].push(nex);
+                if(vis[0][nex.x][nex.y]&&vis[1][nex.x][nex.y]&&vis[2][nex.x][nex.y])
+                    return true;
+            }
+        }
+    }
+    return false;
+}
+int solve(){
+    int step=0;
+    while(!Q[0].empty()||!Q[1].empty()||!Q[2].empty()){
+        ++step;
+        if(bfs(0)) return step;
+        if(bfs(1)) return step;
+        for(int i=1;i<=3;i++)
+            if(bfs(2)) return step;
+    }
+    return -1;
+}
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    while(cin>>n>>m){
+        mst(vis,0);
+        while(!Q[0].empty()) Q[0].pop();
+        while(!Q[1].empty()) Q[1].pop();
+        while(!Q[2].empty()) Q[2].pop();
+        for(int i=1;i<=n;i++) cin>>mp[i]+1;
+        node now;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=m;j++){
+                if(mp[i][j]=='z'){
+                    now.x=i,now.y=j;
+                    vis[0][i][j]=1;
+                    Q[0].push(now);
+                }else if(mp[i][j]=='y'){
+                    now.x=i,now.y=j;
+                    vis[1][i][j]=1;
+                    Q[1].push(now);
+                }else if(mp[i][j]=='h'){
+                    now.x=i,now.y=j;
+                    vis[2][i][j]=1;
+                    Q[2].push(now);
+                }
+            }
+        }
+        int ans=solve();
+        if(ans==-1)
+            cout<<"lack of junxun"<<endl;
+        else
+            cout<<ans<<endl;
+    }
+    return 0;
+}
 ```
 
 
