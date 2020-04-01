@@ -1,6 +1,6 @@
 ## Front-end-learning-to-organize-notes
 
-❤❤❤
+☀☀☀
 
 ## 仓库内容
 
