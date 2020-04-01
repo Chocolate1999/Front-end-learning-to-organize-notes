@@ -8,8 +8,29 @@
 |:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JavaScript">JS 总结</a> |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试经历</a>  | <a href="">算法刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="">计算机基础</a>  |
 
+## 前言
 
 
+前端还是一个年轻的行业，新的行业标准， 框架， 库都不断在更新和新增，正如赫门在2015深JS大会上的《前端服务化之路》主题演讲中说的一句话：“每18至24个月，前端都会难一倍”，这些变化使前端的能力更加丰富、创造的应用也会更加完美。所以关注各种前端技术，跟上快速变化的节奏，也是身为一个前端程序员必备的技能之一。
+
+读者根据自己需要选择性阅读，面试题是对理论知识的总结，让自己学会应该如何表达。
+
+><div>整理的仓库笔记目前还不全面，可能也会出现一些瑕疵问题，欢迎Star和提交issues。</div>
+
+## 面试注意点
+
+面试有几点需注意：(来源<a href="https://weibo.com/wintercn">寒冬winter </a>老师，github:@wintercn)
+
+ 1. 面试题目： 根据你的等级和职位的变化，入门级到专家级，广度和深度都会有所增加。
+
+ 2. 题目类型： 理论知识、算法、项目细节、技术视野、开放性题、工作案例。
+
+ 3. 细节追问：可以确保问到你开始不懂或面试官开始不懂为止，这样可以大大延展题目的区分度和深度，知道你的实际能力。因为这种知识关联是长时期的学习，临时抱佛脚绝对是记不住的。
+
+ 4. 回答问题再棒，面试官（可能是你面试职位的直接领导），会考虑我要不要这个人做我的同事？所以态度很重要、除了能做事，还要会做人。（感觉更像是相亲(
+    •̣̣̣̣̣̥́௰•̣̣̣̣̣̥̀ )）
+
+ 5. 资深的前端开发能把absolute和relative弄混，这样的人不要也罢，因为团队需要的是：你这个人具有可以依靠的才能（靠谱）。
 
 ## 仓库介绍
 
@@ -39,6 +60,61 @@
 座右铭: 学如逆水行舟，不进则退
 
 博客地址：https://chocolate.blog.csdn.net/
+
+
+## 前端开发所需掌握知识点概要
+
+- HTML&CSS：
+
+	对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、
+	CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 & 存储、Histoy,多媒体、WebGL\SVG\Canvas）		
+- JavaScript：
+
+    数据类型、运算、对象、Function、继承、闭包、作用域、事件、Prototype、RegExp、JSON、Ajax、DOM、BOM、
+    内存泄漏、跨域、异步请求、模板引擎、模块化、Flux、同构、算法、ECMAScript6、Nodejs、HTTP
+
+- 其他：
+
+    主流MVVM框架(React\Vue\Angular)、Hybrid App\React Native\Weex、TypeScript、RESTFul、WEB安全、前端工程化、依赖管理、性能优化、
+    重构、团队协作、可维护、易用性、SEO、UED、前端技术选型、快速学习能力等
+
+## 前端学习网站推荐
+
+
+
+
+（以下排名不分先后）
+
+|网站名称 | 网站地址      | 简要介绍 |
+|:--------:| :-------------:|:-------------:|
+| OSCHINA | <a href=" https://www.oschina.net/">https://www.oschina.net/</a> |  中文开源技术交流社区|
+|       九章算法                        |                 <a href="https://www.jiuzhang.com/"> https://www.jiuzhang.com/</a>                            |           硅谷顶尖IT人员教授面试技巧          |
+|         LintCode                       |            <a href=" https://www.lintcode.com/"> https://www.lintcode.com/</a>                                 |         空前强大的在线刷题系统            |
+|             CSDN                   |            <a href=" https://chocolate.blog.csdn.net/"> https://chocolate.blog.csdn.net/</a>                                 |        优秀的博客           |
+|            掘金                   |         <a href="https://juejin.im/">https://juejin.im/</a>                                    |   帮助开发者成长的社区                  | 
+|          开源社区_深度开源                     |         <a href="https://www.open-open.com/">https://www.open-open.com/</a>                                    |       一切开源              |
+|            慕课网                   |                 <a href=" http://www.imooc.com/">http://www.imooc.com/</a>                            |        程序员的梦工厂             |
+|              div.io                 |                 <a href=" http://div.io">http://div.io</a>                             |    高质量前端资源汇聚                 |
+|            推酷                   |           <a href="https://www.tuicool.com/">https://www.tuicool.com/ </a>                                   |          IT人专属个性阅读社区           |
+|         Hacker News                      |        <a href="https://news.ycombinator.com/news">https://news.ycombinator.com/news</a>                                     |         新闻            |
+|           InfoQ                    |           <a href=" https://www.infoq.cn/">https://www.infoq.cn/</a>                                   |               软件开发及领域知识传播-中文版      |
+|             w3cplus                  |            <a href=" http://www.w3cplus.com/"> http://www.w3cplus.com/</a>                                 |        国内前端行业的技术博客             |
+|           Stack Overflow                     |       <a href=" http://stackoverflow.com/">http://stackoverflow.com/</a>                                      |        为开发人员提供支持             |
+|            w3school                   |           <a href=" http://www.w3school.com.cn/">http://www.w3school.com.cn/</a>                                   |       领先的 Web 技术教程 - 全部免费              |
+|           MDN                    |             <a href=" https://developer.mozilla.org/zh-CN/docs/Web/">https://developer.mozilla.org/zh-CN/docs/Web/</a>                                |      Web 开发技术分享               |
+
+
+## 官方文档推荐
+
+- <a href="https://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery 基本原理</a>
+- <a href="https://es6.ruanyifeng.com/">ECMAScript 6 入门 作者：阮一峰</a>
+- <a href="http://bonsaiden.github.io/JavaScript-Garden/zh/">JavaScript 秘密花园</a>
+- <a href="http://css.doyoe.com/">web前端开发参考手册系列之CSS参考手册</a>
+- <a href="https://wangdoc.com/javascript/">JavaScript 教程</a>
+
+
+
+
 
 ## 贡献
 
