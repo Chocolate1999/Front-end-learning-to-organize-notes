@@ -1,6 +1,108 @@
+<!-- TOC -->
 
+- [面试准备——自我介绍](#面试准备自我介绍)
+- [一面 / 二面](#一面--二面)
+    - [面试技巧](#面试技巧)
+- [页面布局](#页面布局)
+    - [题目](#题目)
+    - [五种解决方式代码](#五种解决方式代码)
+    - [展示效果](#展示效果)
+    - [知识拓展](#知识拓展)
+    - [1、各自的优缺点](#1各自的优缺点)
+    - [2、去掉高度，有哪几种布局可以使用？](#2去掉高度有哪几种布局可以使用)
+    - [页面布局模块——总结](#页面布局模块总结)
+    - [页面布局的变通](#页面布局的变通)
+- [CSS盒模型](#css盒模型)
+    - [题目](#题目-1)
+    - [基本概念](#基本概念)
+    - [JS如何获取盒模型对应的宽和高](#js如何获取盒模型对应的宽和高)
+    - [实例题（根据盒模型解释边距重叠）](#实例题根据盒模型解释边距重叠)
+    - [BFC（边距重叠解决方案）](#bfc边距重叠解决方案)
+    - [垂直方向边距重叠问题](#垂直方向边距重叠问题)
+- [DOM 事件类](#dom-事件类)
+    - [题目](#题目-2)
+    - [基本概念：DOM事件的级别](#基本概念dom事件的级别)
+    - [DOM事件模型](#dom事件模型)
+    - [DOM事件流](#dom事件流)
+    - [描述DOM事件捕获的具体流程](#描述dom事件捕获的具体流程)
+    - [Event对象的常见应用](#event对象的常见应用)
+    - [自定义事件](#自定义事件)
+    - [实例分析](#实例分析)
+- [HTTP 协议类](#http-协议类)
+    - [题目](#题目-3)
+    - [HTTP协议的主要特点](#http协议的主要特点)
+    - [HTTP报文的组成部分](#http报文的组成部分)
+    - [HTTP方法](#http方法)
+    - [POST和GET的区别（重点前5条）](#post和get的区别重点前5条)
+    - [HTTP状态码](#http状态码)
+    - [什么是持久连接](#什么是持久连接)
+    - [什么是管线化（加分点）](#什么是管线化加分点)
+- [原型链](#原型链)
+    - [题目](#题目-4)
+    - [创建对象有几种方法](#创建对象有几种方法)
+    - [原型、构造函数、实例、原型链](#原型构造函数实例原型链)
+    - [instanceof的原理](#instanceof的原理)
+    - [new运算符](#new运算符)
+- [面向对象](#面向对象)
+    - [题目](#题目-5)
+    - [类与实例](#类与实例)
+    - [类与继承](#类与继承)
+- [通信类](#通信类)
+    - [题目](#题目-6)
+    - [什么是同源策略及限制](#什么是同源策略及限制)
+    - [前后端如何通信](#前后端如何通信)
+    - [如何创建Ajax](#如何创建ajax)
+    - [跨域通信的几种方式（重点）](#跨域通信的几种方式重点)
+- [安全类](#安全类)
+    - [题目](#题目-7)
+    - [CSRF](#csrf)
+    - [XSS](#xss)
+    - [CSRF与XSS区别](#csrf与xss区别)
+- [算法类](#算法类)
+    - [题目](#题目-8)
+    - [排序](#排序)
+    - [堆栈、队列、链表](#堆栈队列链表)
+    - [递归](#递归)
+    - [波兰式和逆波兰式](#波兰式和逆波兰式)
+    - [关于算法的心得](#关于算法的心得)
+- [二面 / 三面](#二面--三面)
+    - [面试技巧](#面试技巧-1)
+- [渲染机制](#渲染机制)
+    - [题目](#题目-9)
+    - [什么是DOCTYPE及作用](#什么是doctype及作用)
+    - [浏览器渲染过程](#浏览器渲染过程)
+    - [重排Reflow](#重排reflow)
+    - [重绘Repaint](#重绘repaint)
+- [js运行机制](#js运行机制)
+    - [题目](#题目-10)
+    - [如何理解JS的单线程](#如何理解js的单线程)
+    - [什么是任务队列](#什么是任务队列)
+    - [什么是Event Loop](#什么是event-loop)
+    - [总结](#总结)
+- [页面性能](#页面性能)
+    - [题目](#题目-11)
+    - [异步加载](#异步加载)
+    - [浏览器缓存](#浏览器缓存)
+- [错误监控](#错误监控)
+    - [题目](#题目-12)
+    - [前端错误的分类](#前端错误的分类)
+    - [错误的捕获方式](#错误的捕获方式)
+    - [上报错误的基本原理](#上报错误的基本原理)
+- [三面 / 四面](#三面--四面)
+    - [面试技巧](#面试技巧-2)
+- [结尾](#结尾)
+
+<!-- /TOC -->
 ## 面试准备——自我介绍
 
+## 一面 / 二面
+### 面试技巧
+- 准备要充分
+- 知识要系统
+- 沟通要简洁
+- 内心要诚实
+- 态度要谦虚
+- 回答要灵活
 
 ## 页面布局
 
@@ -520,17 +622,17 @@ css3中推出的flex布局，就是为了解决上述两种方式不足而出现
 
 **谈谈你对CSS盒模型的认识**
 
-基本概念：标准模型+IE模型
+- 基本概念：标准模型+IE模型
 
-标准模型和IE模型的区别
+- 标准模型和IE模型的区别
 
-CSS如何设置这两种盒模型
+- CSS如何设置这两种盒模型
 
-JS如何设置获取盒模型对应的宽和高
+- JS如何设置获取盒模型对应的宽和高
 
-实例题（根据盒模型解释边距重叠）
+- 实例题（根据盒模型解释边距重叠）
 
-BFC（边距重叠解决方案）
+- BFC（边距重叠解决方案）
 
 <hr/>
 
@@ -761,8 +863,11 @@ content = width+padding+border
 给子元素创建父元素，让父元素设置BFC
 
 如下图所示，仅需加一个div，然后设置`overflow: hidden`即可
+
 ![](https://img-blog.csdnimg.cn/20200402211309341.png)
+
 **效果**
+
 ![](https://img-blog.csdnimg.cn/20200402211300463.png)
 
 接下来，来一个左边固定，右边自适应的例子。
@@ -847,17 +952,17 @@ content = width+padding+border
 
 ### 题目
 
-基本概念：DOM事件的级别
+- 基本概念：DOM事件的级别
 
-DOM事件模型
+- DOM事件模型
 
-DOM事件流
+- DOM事件流
 
-描述DOM事件捕获的具体流程
+- 描述DOM事件捕获的具体流程
 
-Event对象的常见应用
+- Event对象的常见应用
 
-自定义事件
+- 自定义事件
 
 ### 基本概念：DOM事件的级别
 
@@ -983,19 +1088,19 @@ ev.dispatchEvent(eve);
 ## HTTP 协议类
 
 ### 题目
-HTTP协议的主要特点
+- HTTP协议的主要特点
 
-HTTP报文的组成部分
+- HTTP报文的组成部分
 
-HTTP方法
+- HTTP方法
 
-POST和GET的区别
+- POST和GET的区别
 
-HTTP状态码
+- HTTP状态码
 
-什么是持久连接
+- 什么是持久连接
 
-什么是管线化
+- 什么是管线化
 
 
 ### HTTP协议的主要特点
@@ -1070,109 +1175,767 @@ HTTP状态码
 - 4xx：客户端错误——请求有语法错误或请求无法实现
 - 5xx：服务器错误——服务器未能实现合法的请求
 
+一般答完上述基本ok了，如果问的详细一点的话，就多加一点知识上去：
 
+- `200 OK`：客户端请求成功
+- `206 Partial Content`：客户发送了一个带有Range（范围）头的GET请求，服务器完成了它（比如客户端请求0-1w字节，服务器就会返回206,常见播放视频和音频地址，文件过大时一般返回206）
+
+<hr/>
+
+- `301 Moved Permanently`：所请求的页面已经转移至新的URL
+- `302 Found`：所请求的页面已经`临时`转移至新的URL
+- `304 Not  Modified`：客户端有`缓冲`的文档并发出一个条件性的请求，服务器告诉客户，原来缓冲的文档还可以继续使用
+
+<hr/>
+
+- `400 Bad Request`：客户端请求有语法错误，不能被服务器所理解
+- `401 Unauthorized`：请求未经授权，这个状态码必须和`WWW-Authenticate`报头域一起使用
+- `403 Forbidden`：请求访问的页面被禁止（比如页面只能通过服务端去访问）
+- `404 Not Found`：请求资源不存在
+
+<hr/>
+
+- `500 Internal Server Error`：服务器发生不可预料的错误但原来缓冲的文档还可以继续使用
+- `503 Server Unavailable`：请求未完成，服务器临时过载或当机，一段时候后可能恢复正常
 
 ### 什么是持久连接
+HTTP协议采用“请求-应答”模式，当使用普通模式，即`非 Keep-Alive` 模式时，每个请求 / 应答客户和服务器都要新建一个连接，完成之后立即断开连接（HTTP协议为无连接的协议）
 
-### 什么是管线化
+当使用 `Keep-Alive `模式（又称持久连接、连接重用）时，`Keep-Alive` 功能使客户端到服务端的连接持续有效，当出现对服务器的后续请求时，`Keep-Alive` 功能避免了建立或者重新建立连接
 
+PS：只有HTTP 1.1 版本才支持持久连接，1.0不支持。
 
+### 什么是管线化（加分点）
+在使用持久连接的情况下，某个连接上消息的传递类似于
+
+请求1->响应1->请求2->响应2->请求3->响应3
+
+某个连接上的消息类似变成了这样：
+
+请求1->请求2->请求3->响应1->响应2->响应3
+
+（将请求打包一起发送，然后服务器一起打包回来响应）
+
+**拓展知识：**
+
+- 管线化机制通过持久连接完成，仅 `HTTP / 1.1` 支持此技术（重点）
+- 只有`get`和`head`请求可以进行管线化，而 `post` 有所限制（重点）
+- 初次创建连接时不应启动管线机制，因为对方（服务器）不一定支持 `HTTP /1.1 `版本的协议（重点）
+- 管线化不会影响响应到来的顺序，如上面的例子所示，响应返回的顺序并未改变
+- `HTTP / 1.1`要求服务器端支持管线化，但并不要求服务器端也对响应进行管线化处理，只是要求对于管线化的请求不失败即可
+- 由于上面提到的服务器端的问题，开启管线化很可能并不会带来大幅度的性能提升，而且很多服务器端和代理程序对管线化的支持并不好，因此现代浏览器如 `Chrome` 和 `Firefox` 默认并未开启管线化支持
 
 
 ## 原型链
+### 题目
+
+- 创建对象有几种方法
+- 原型、构造函数、实例、原型链
+- instanceof的原理
+- new运算符
+
+### 创建对象有几种方法
+
+```javascript
+var o1 = {name:'o1'};
+var o11 = new Object({name:'o11'});
+```
+
+```javascript
+var M = function(){this.name='o2'};
+var o2 = new M();
+```
+
+```javascript
+var P = {name:'o3'};
+var o3 = Object.create(P);
+```
+### 原型、构造函数、实例、原型链
+![](https://img-blog.csdnimg.cn/20200404091811124.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
+```javascript
+var M = function(name){this.name=name};    //构造函数
+var o2 = new M('o2');					   //实例
+```
+构造函数和原型对象的关系
+![](https://img-blog.csdnimg.cn/20200404092424139.png)
+
+实例和构造函数的关系
+
+![](https://img-blog.csdnimg.cn/20200404092715485.png)
 
 
+原型链：通过原型链的方式，找到原型对象，原型对象的方法是被不同实例所共有的。例如Object上有toString()方法，因此其它所有的实例都共有这个方法。
 
+### instanceof的原理
+![](https://img-blog.csdnimg.cn/20200404093505976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+`instanceof`原理就是判断当前实例是不是当前构造函数的实例对象，判断依据就是实例对象的`__proto__`和构造函数的`prototype`是否指向相同的引用，只要在一条原型链上，`instanceof`就会返回`true`。
+
+很抽象是吧，下面我们还是举上文的例子：
+
+```javascript
+var M = function(name){this.name=name};
+var o2 = new M('o2');
+```
+
+![](https://img-blog.csdnimg.cn/20200404094108600.png)
+
+因此，`instanceof`判断不严谨，比如m继承了a、b、c，我怎么判断是继承了哪一个呢？用`instanceof`判断都返回`true`。
+
+下面就来，介绍`constructor`判断方式
+
+![](https://img-blog.csdnimg.cn/20200404094632985.png)
+### new运算符
+- 一个新对象被创建。它继承自`foo.prototype`
+
+- 构造函数foo被执行。执行的时候，相应的参数会被传入，同时上下文（this）会被指定为这个新实例。`new foo` 等同于 `new foo()`，只能用在不传递任何参数的情况
+
+- 如果构造函数返回一个“对象”，那么这个对象会取代整个new出来的结果。如果构造函数没有返回对象，那么new出来的结果为步骤1创建的对象
 
 ## 面向对象
+### 题目
+**类与实例**
+
+- 类的声明
+- 生成实例
+
+**类与继承**
+
+- 如何实现继承
+- 继承的几种方式
+
+### 类与实例
+
+```javascript
+<body>
+    <script>
+        /* 类的声明 */
+        function Animal(){
+            this.name='aaa';
+        }
+        /* ES6中的class的声明 */
+        class Animal2{
+            constructor(){
+                this.name = 'bbb';
+            }
+        }
+        /* 实例化一个类 */
+        console.log(new Animal(),new Animal2());
+    </script>
+</body>
+```
+**效果**
+![](https://img-blog.csdnimg.cn/20200404101354316.png)
+### 类与继承
+**方法一：借助构造函数来实现继承**
+
+```javascript
+		/* 借助构造函数来实现继承 */
+        function fruit(){
+            this.name = 'fruit';
+        }
+        function apple(){
+            fruit.call(this);
+            this.type='apple';
+        }
+        console.log(new apple);
+```
+
+上述这种方式，是通过改变`fruit`构造函数运行时this指向，指向了`apple`上，但是`fruit`原型链上的东西并没有被继承。
+
+```javascript
+		/* 借助构造函数来实现继承 */
+        function fruit(){
+            this.name = 'fruit';
+        }
+        fruit.prototype.eat = function(){
+            console.log('吃水果啦！');
+        }
+        function apple(){
+            fruit.call(this);
+            this.type='apple';
+        }
+        console.log(new apple().eat());
+```
+![](https://img-blog.csdnimg.cn/20200404105822522.png)
+因此，通过构造函数来实现的继承，只能继承父类构造函数的属性，如果原型`prototype`上面还有方法甚至原型链上的方法，不会继承。
+
+**方法二：借助原型链实现继承**
+
+```javascript
+/* 借助原型链实现继承 */
+function fruit(){
+  this.name = 'fruit';
+}
+function apple(){
+  this.type='apple';
+}
+apple.prototype = new fruit();
+console.log(new apple());
+```
+掌握之前原型链相关的知识，下面的等式应该就比较容易理解了
+![](https://img-blog.csdnimg.cn/2020040411063490.png)
+但这种继承方式也是有缺点的，下文来探讨这个问题：
 
 
+```javascript
+        /* 借助原型链实现继承 */
+        function fruit(){
+            this.name = 'fruit';
+            this.arr = [1,2,3];
+        }
+        function apple(){
+            this.type='apple';
+        }
+        apple.prototype = new fruit();
+        var app1 = new apple();
+        var app2 = new apple();
+        app1.arr.push(4);
+        console.log(app1,app2);
+```
+
+![](https://img-blog.csdnimg.cn/20200404110957499.png)
+
+从上述结果来看，当我们修改某一个对象时，该函数的所有新出的实例对象都会跟着改变，这就造成了`污染`问题，肯定不是我们面向对象思想所想要的。（因为它们引用的是同一个父类实例对象）
+
+
+**方式三：组合方式实现继承**
+
+这种方式就是结合前两种的优点，弥补它们的缺点。
+
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象</title>
+</head>
+<body>
+    <script>
+        /* 关于继承的几种方式
+        **使用方法：
+        **读者按需将对应模块注释取消掉即可 
+        */
+
+        /* 借助原型链实现继承 */
+        /*function fruit(){
+            this.name = 'fruit';
+            this.arr = [1,2,3];
+        }
+        function apple(){
+            this.type='apple';
+        }
+        apple.prototype = new fruit();
+        var app1 = new apple();
+        var app2 = new apple();
+        app1.arr.push(4);
+        console.log(app1,app2);*/
+
+        /* 组合方式实现继承 */
+        /**
+        *此方法的缺点：new fruit() 父类构造函数执行了两次，可以但没必要
+        */
+        function fruit(){
+            this.name = 'fruit';
+            this.arr = [1,2,3];
+        }
+        function apple(){
+            fruit.call(this);
+            this.type='apple';
+        }
+        apple.prototype = new fruit();  //这里拿的是父类的实例，没有自己的constructor
+        var app1 = new apple();
+        var app2 = new apple();
+        app1.arr.push(4);
+        //console.log(app1,app2);
+        //console.log(app1.constructor,app2.constructor)   
+        
+        /* 组合方式实现继承优化1 */
+        function fruit1(){
+            this.name = 'fruit';
+            this.arr = [1,2,3];
+        }
+        function apple1(){
+            fruit.call(this);
+            this.type='apple';
+        }
+        apple1.prototype = fruit1.prototype;  //这里拿的是父类的原型对象，但依旧没有自己的constructor
+        var app3 = new apple1();
+        var app4 = new apple1();
+        app3.arr.push(4);
+        //console.log(app3,app4);
+        //判断实例
+        //console.log(app3 instanceof apple1);
+        //console.log(app3 instanceof fruit1); //这里无法判断当前对象是由父类产生的实例对象还是由子类产生的实例对象
+        //判断构造函数
+        //console.log(app3.constructor);      
+        //console.log(app4.constructor);       //因为和父类的原型对象是一个对象，导致constructor也是指向的父类的constructor，无法判断自己
+
+        /* 组合方式实现继承优化2 */
+        function fruit2(){
+            this.name = 'fruit';
+            this.arr = [1,2,3];
+        }
+        function apple2(){
+            fruit.call(this);
+            this.type='apple';
+        }
+        apple2.prototype = Object.create(fruit2.prototype);  //这里使用Object.create()方法，和之前直接用fruit2.prototype来说，它创建了一个中间对象，和父类不是指向同一个区域了
+        //这样就能区分父类和子类的原型对象了，达到父类和子类原型对象的隔离效果
+        apple2.prototype.constructor = apple2;  //由于隔离了父类子类的原型对象，我们就可以指定子类自己的constructor
+        var app5 = new apple2();
+        var app6 = new apple2();
+        app5.arr.push(4);
+        console.log(app5,app6);
+         //判断实例
+        console.log(app5 instanceof apple2);
+        console.log(app5 instanceof fruit2); //因此，这里可以判断当前对象是由父类产生的实例对象还是由子类产生的实例对象
+        //判断构造函数
+        console.log(app5.constructor);       //指向的是自己的constructor
+
+
+    </script>
+
+    
+</body>
+</html>
+```
+
+<hr>
 
 
 
 ## 通信类
 
+### 题目
+- 什么是同源策略及限制
+- 前后端如何通信
+- 如何创建Ajax
+- 跨域通信的几种方式（重点）
 
+### 什么是同源策略及限制
+同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。
+这是一个用于隔离潜在恶意文件的关键的安全机制。
+
+ 源包括协议、域名、端口
+
+- Cookie、LocalStorage和IndexDB无法读取
+- DOM无法获得
+- AJAX请求不能发送
+ 
+### 前后端如何通信
+- Ajax（同源下的通信）
+- WebSocket（不限制，不受同源策略的限制）
+- CORS（支持同源通信，也支持跨域通信，新型）
+
+### 如何创建Ajax
+- XMLHttpRequest（高级浏览器才支持）对象的工作流程
+- 兼容性处理
+- 事件的触发条件
+- 事件的触发顺序
+
+### 跨域通信的几种方式（重点）
+- JSONP
+- Hash（改变页面不刷新，search改变会刷新，因此search不可以）
+- postMessage（H5中出现的标准，实现跨域通信）
+- WebSocket
+- CORS（可以理解为支持跨域通信的Ajax，在请求头上加了Origin）
+
+**JSONP实现原理：**
+
+根据script标签异步加载而来
+
+![](https://img-blog.csdnimg.cn/20200404135628568.png)
+
+![](https://img-blog.csdnimg.cn/2020040413390361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+将`html`加入`script`标签，即把请求发送出去
+![](https://img-blog.csdnimg.cn/20200404135715278.png)
+
+很关键一点是会向服务端发送一个`callbackName`，然后服务器就会响应如下内容（下面那个script里的内容）利用`callbackName`作为函数名来返回，而且本地必须有这个函数名的函数。
+![](https://img-blog.csdnimg.cn/20200404133842188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**Hash与postMessage实现原理**
+![](https://img-blog.csdnimg.cn/20200404135948962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**WebSocket实现原理**
+![](https://img-blog.csdnimg.cn/2020040414064464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
+**CORS实现原理**
+![](https://img-blog.csdnimg.cn/20200404141010376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+PS：CORS为什么支持跨域通信？
+
+浏览器回拦截`Ajax`请求，如果觉得是跨域的，就会在请求头上加上`origin`。
 
 ## 安全类
+### 题目
+- CSRF
 
+	基本概念和缩写
+	攻击原理
+	防御措施
 
+- XSS
+
+### CSRF
+
+**基本概念和缩写**
+
+CSRF，通常称为跨站请求伪造，英文名（Cross-site request forgery）缩写CSRF
+
+**CSRF攻击原理**
+
+- 用户必须在网站登录过
+- 网站中某个接口存在漏洞
+![](https://img-blog.csdnimg.cn/20200404141759423.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
+**CSRF防御措施**
+
+- Token验证
+- Referer验证（页面来源验证）
+- 隐藏令牌（类似Token，隐藏在http的head头中，不放在链接上）
+
+### XSS
+**基本概念和缩写**
+
+跨域脚本攻击（cross-site scripting）
+
+**攻击原理**
+
+比如可以在你的提交区里面写上script标签，即用一些渠道向你的页面注入js脚本
+
+**防御措施**
+
+让插入的js不可执行
+
+### CSRF与XSS区别
+
+CSRF是利用本身的漏洞自动执行接口，依赖于用户登录网站
+
+XSS是向页面注入js，js函数体里面做想做的事
 
 ## 算法类
+### 题目
+- 排序
+- 堆栈、队列、链表
+- 递归
+- 波兰式和逆波兰式
+- ...
+
+PS：由于文章篇幅所限，并且算法这一块需要的是自己平时的积累，这里就不作长文加载了，关于算法这一块我会在github里有相应专栏，记录题库。因此，在这里就给大家分享一些比较好的文章提供学习。
+
+<hr/>
+
+### 排序
+- 快速排序：<a href="https://segmentfault.com/a/1190000009426421">传送门</a>
+- 选择排序：<a href="https://segmentfault.com/a/1190000009366805">传送门</a>
+- 希尔排序：<a href="https://segmentfault.com/a/1190000009461832">传送门</a>
+
+<a href="https://chocolate.blog.csdn.net/article/details/105218288">推荐：【再也不怕面试官要你手写排序算法】一文详细解读前后端之各种排序算法及知识拓展（附图示） JS / C / C++</a>
+### 堆栈、队列、链表
+<a href="https://juejin.im/entry/58759e79128fe1006b48cdfd">参考：JS中的数据结构与算法</a>
+
+### 递归
+<a href="https://segmentfault.com/a/1190000009857470">参考：JS中的递归</a>
+### 波兰式和逆波兰式
+<a href="https://www.cnblogs.com/chenying99/p/3675876.html">参考：波兰式、逆波兰式与表达式求值</a>
+
+<a href="https://github.com/Tairraos/rpn.js">参考：源码</a>
 
 
+### 关于算法的心得
+首先，对于前端来说，算法要求没有后端那么严格，考察的一般不会很刁专，一般就是看下你的思考能力。如果一开始就考察算法题，如果你回答不了的话，也很正常，或许这不是一个关于前端的部门...可能招的是算法工程师，算法这一块问的话，多半是中间时间段。算法这一块的话，在于平时积累，如果时间充裕的话，可以深入了解一点，这也是面试加分点，如果时间紧迫的话，把上文提到的部分专题弄懂已经不错了。
 
+<hr/>
+
+## 二面 / 三面
+
+### 面试技巧
+
+- 知识面要广
+- 理解要深刻
+- 内心要诚实
+- 态度要谦虚
+- 回答要灵活
+- 要学会赞美
 
 ## 渲染机制
+### 题目
 
+- 什么是DOCTYPE及作用
+- 浏览器渲染过程
+- 重排Reflow
+- 重绘Repaint
+- 布局Layout
 
+### 什么是DOCTYPE及作用
+- DTD（document type ，文档类型定义）是一系列的语法规则，用来定义XML或（X）HTML的文件类型。浏览器会使用它来判断文件类型，决定使用何种协议来解析，以及切换浏览器模式
+- DOCTYPE是用来声明文档类型和DTD规范的，一个主要的用途便是文件的合法性验证。如果文件代码不合法，那么浏览器就会出现一些解析错误。（简单来说，就是告诉浏览器我用了哪一个DTD）
+
+![](https://img-blog.csdnimg.cn/20200404161808788.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+PS：这里要记住html5该如何声明，以及4.0版本有严格模式和传统模式，具体区别如上图下划线所示
+
+### 浏览器渲染过程
+![](https://img-blog.csdnimg.cn/20200404162046639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
+**简单快速回答：**
+
+第一步，HTML经过HTML解析器解析成为DOM Tree
+
+第二步，CSS通过CSS解析器形成样式规则
+
+第三步，将两个DOM结合形成Render Tree，这里就类似于告诉浏览器渲染树结构基本出来了，此时有一个平行操作，Layout，经过这个，就能知道元素具体应该显示在屏幕在哪个位置（宽、高、颜色等）
+
+最后一步，浏览器通过GUI画图，呈现页面内容，最后Display显示页面
+
+<hr/>
+
+下面通过几个比较好理解的图形来将抽象具体化：
+
+**DOM Tree**
+![](https://img-blog.csdnimg.cn/20200404163122362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**CSSOM Tree**
+![](https://img-blog.csdnimg.cn/20200404163149664.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**Render Tree**
+![](https://img-blog.csdnimg.cn/20200404163230751.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**Layout**
+![](https://img-blog.csdnimg.cn/20200404163324722.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
+### 重排Reflow
+**定义**
+
+DOM结构中的各个元素都有自己的盒子（模型），这些都需要浏览器根据各种样式来计算并根据计算结果将元素放到它该出现的位置，这个过程称之为reflow
+
+**触发Reflow**
+
+- 当你增加、删除、修改`DOM`结点时，会导致 `Reflow` 或 `Repaint`
+- 当你移动`DOM`的位置，或是搞个动画的时候
+- 当你修改`CSS`样式的时候
+- 当你 `Resize` 窗口的时候（移动端没有这个问题），或是滚动的时候
+- 当你修改网页的默认字体时候（影响比较大，性能问题）
+
+### 重绘Repaint
+**定义**
+
+当各种盒子的位置、大小以及其他属性，例如颜色、字体大小等确定下来后，浏览器于是便把这些元素都按照各自的特性绘制了一遍，于是页面的内容出现了，这个过程称之为`repaint`。即页面需要呈现的内容，一起画到屏幕上。
+
+**触发Repaint**
+
+- DOM改动
+- CSS改动
+
+**（重点）如何尽量减小Repaint？**
+
+比如页面有一个计算器，用户在输入框输入一些计算表达式，最后显示计算结果，然后把输入给隐藏掉。这里就有两个交互，先是用户输入，将输入隐藏掉，然后将结果显示出来。这两个交互呈现内容不一样，当然就需要Repaint，那怎么做少画点东西？
+
+好像是有一个documentFrame这个东西，把n个节点创建成一个片段，向浏览器一次添加这个片段。
+
+（这里我的朋友考察过，遗留一下这个问题，可以帮助我完善这个问题，谢谢！）
 
 ##  js运行机制
+关于这一专题，我之前的文章也是写的挺多的了。
+
+<a href="https://blog.csdn.net/weixin_42429718/article/details/104907304">推荐阅读：【金三银四】一个问题就知道你会不会JS了 阿里、头条真题解析</a>
+
+<a href="https://blog.csdn.net/weixin_42429718/article/details/104990407">推荐阅读：【金三银四】 一文弄懂 js 数据类型、堆栈内存、作用域（链）、闭包知识拓展 （一）</a>
+
+下面就例举几个经典题，读者可以好好体会一下：
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js运行机制</title>
+</head>
+<body>
+    <script>
+        console.log(1);
+        setTimeout(function(){
+            console.log(3);
+        },0);
+        console.log(2);
+    </script>
+</body>
+</html>
+```
+
+```javascript
+for(var i=0;i<4;i++){
+   setTimeout(function(){
+      console.log(i);
+   },1000)
+}
+```
+
+### 题目
+- 如何理解JS的单线程
+- 什么是任务队列
+- 什么是Event Loop
+
+以上三个问题的详细表述：
+
+<a href="https://blog.csdn.net/weixin_42429718/article/details/104990407">推荐阅读：【金三银四】 一文弄懂 js 数据类型、堆栈内存、作用域（链）、闭包知识拓展 （一）</a>
+
+### 如何理解JS的单线程
+
+学过JS，不对，听过JS的同学应该都知道，JS是单线程的，而浏览器是多线程的，分配的时间内js只能干一件事情
+
+### 什么是任务队列
+
+分同步任务和异步任务
+
+### 什么是Event Loop
+
+为了解决同步和异步问题，浏览器提供了一个事件队列 Event Queue，根据特征不同，分为微任务和宏任务队列
+
+执行顺序是：主线程代码 > 微任务 > 宏任务
+
+**宏任务：**
+
+定时器例如setTimeout（异步）、事件绑定
+
+**微任务：**
+
+await（异步，执行x函数并等待返回结果，有结果再执行下面代码）
+
+resolve() / reject() 执行的时候把 then / catch 中的代码执行
+
+promise、async
+
+**特殊情况：**
+
+new Promise（同步）会立即执行
 
 
+### 总结
+
+- 理解Js的单线程的概念
+- 理解任务队列
+- 理解 Event Loop
+- 理解哪些语句会放入异步任务队列
+- 理解语句放入异步任务队列的时机
 
 ## 页面性能
+### 题目
+提升页面性能的方法有哪些？
+
+- 1、资源压缩合并，减少HTTP请求
+- 2、非核心代码异步加载——异步加载的方式——异步加载的区别
+- 3、利用浏览器缓存——缓存的分类——缓存的原理
+- 4、使用CDN
+- 5、预解析DNS
+
+```javascript
+<meta http-equiv="x-dns-prefetch-control" content="on"> //打开a标签dns预解析
+//有些https默认关了dns预解析，使用上述可以打开（加分点）
+<link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+```
+### 异步加载
+
+1、异步加载的方式
+
+- 动态脚本加载（用过js添加到document中，比如加入到body或head中）
+- defer
+- async
+
+2、异步加载的区别
+
+（1）`defer`是在HTML解析完之后才会执行，如果是多个，按照加载的顺序依次执行
+（2）`async`是在加载完之后立即执行，如果是多个，执行顺序和加载顺序无关
+
+
+### 浏览器缓存
+**1、缓存的分类**
+
+- ① **强缓存**（不用任何请求，拿过来就用，如果两个都下发，以第二个`Cache`为准）
+
+	**Expires（过期时间-服务器绝对时间）** Expires:Thu,21 Jan 2017 23:39:02 GMT
+	（会导致客户端时间和服务器时间之间时间差问题）
+	**Cache-Control（客户端相对时间，单位秒）** Cache-Control:max-age=3600
 
 
 
+- ② **协商缓存**（浏览器发现本地有这个副本，但是不确定用不用它，于是得向服务器问一下，这个副本要不要用）
+
+	**Last-Modified**（拿到某个资源文件时，通过这个字段服务器下发一个时间）  **If-Modified-Since** （当下次请求这个资源是否发生变化时，是用这个`key`值，对比两个时间）
+
+	Last-Modified: Web,26 Jan 2017 00:35:11 GMT
+
+	（上述方式会存在问题，例如我可能时间上修改了，但是内容并没有修改）
+	
+	**Etage**（解决上述问题，服务器给Etage值，当过了强缓存时间，浏览器请求是否可用副本时，会在http请求头中用 **If-None-Match** 当做key值，加上`value`，此value就是Etage的值）
+
+**PS：（面试真题-鹅厂）你知道浏览器与缓存相关的http头有哪些？**
+
+答案就是上述**加粗字体**
 
 ## 错误监控
+**问法：如何检测JS错误，如何保证你的产品质量？**
+
+### 题目
+- 前端错误的分类
+- 错误的捕获方式
+- 上报错误的基本原理
+
+### 前端错误的分类
+
+即时运行错误：代码错误
+资源加载错误
+
+### 错误的捕获方式
+**即时运行错误**的捕获方式
+
+（1） try...catch
+（2）window.onerror（无法捕获资源加载错误，理由如下）
+
+**资源加载错误**（上述原因：因为资源加载错误不会冒泡）
+
+（1）`object.onerror`（节点上绑定`onerror`事件）
+
+（2）`performance.getEntries()` （获得目前已加载的资源，例如图片，然后用document.getElementsByTagName('img')来获取需要加载的图片，然后用总的去减已加载的，就能知道未加载的有多少了）
+
+（3）`Error`事件捕获（之前说不能冒泡，但可以捕获）
+
+![](https://img-blog.csdnimg.cn/20200404205139389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200404205209691.png)
+
+**延伸：跨域的js运行错误可以捕获吗，错误提示什么，应该怎么处理？**
+
+![](https://img-blog.csdnimg.cn/2020040420481855.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+**处理**
+- 在script标签增加 `crossorigin` 属性
+- 设置js资源响应头 `Access-Control-Allow-Origin:*（可以指定域名）
 
 
+### 上报错误的基本原理
+1、采用Ajax通信的方式上报
+2、利用Image对象上报（重点，加分点）
 
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用Image对象上报</title>
+</head>
+<body>
+    <script>
+        (new Image()).src='http://baidu.com/test?name=123';
+    </script>
+</body>
+</html>
+```
+此时，我们查看`Nerwork`，可以发现，我们的请求已经发出去了（比Ajax简单，不用借用任何第三方库）
+![](https://img-blog.csdnimg.cn/20200404205701538.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
 
+## 三面 / 四面
 
+### 面试技巧
 
-## 业务能力
-
-
-
-
-
-## 团队协作能力与带人能力
-
-
-
-
-
-## 职业竞争力
-
-
-
-## 职业规划
-
-
-
-
-## 补充
-
-
-
-
-## 面试总结
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 准备要充分
+- 描述要熟练
+- 引导找时机
+- 优势要发挥
+- 回答要灵活
 
 
 
