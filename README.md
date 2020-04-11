@@ -1,4 +1,5 @@
 
+
 ## Front-end-learning-to-organize-notes
 
 ☀☀☀
@@ -12,6 +13,13 @@
 | Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
 |:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JavaScript">JS 总结</a> |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试经历</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E7%AE%97%E6%B3%95">算法刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7">面试技巧</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93">工具总结</a>|   <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Questions">前端全家桶 </a>  | 
+## 项目经历
+
+| 项目名称 |  时间    |项目地址|
+|:--------:| :-------------:| :-------------:|
+|     J2EE项目-OnlineSchool      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">码云地址</a>         |
+|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://gitee.com/Chocolate666/vue_shop">码云地址</a> |
+|  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan  | 2020.03-至今 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">github地址</a>  |
 
 ## 前言
 
