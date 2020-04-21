@@ -8,6 +8,12 @@
 
 传送门：https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/
 
+## 笔记网站（更新）
+
+https://yangchaoyi.vip/
+
+为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
+
 ## 仓库内容
 
 | Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
