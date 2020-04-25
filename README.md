@@ -1,33 +1,41 @@
 
 
-## Front-end-learning-to-organize-notes
+##  :sunny:Front-end-learning-to-organize-notes
 
-☀☀☀
+<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://Chocolate1999.github.io/img/avatar.png" alt="Blog logo"></a> </p>
 
-## 仓库地址
+<p align="center">
+<a href="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes"><img src="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="HitCount"></a><a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a></p>
+
+## :seedling:仓库地址
 
 传送门：https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/
 
-## 笔记网站（更新）
+## :loudspeaker:公告
+感谢访问本站，若喜欢请收藏，star支持一下 ✿✿ヽ(°▽°)ノ✿
+
+
+## :snowman:笔记网站（更新）
 
 https://yangchaoyi.vip/
 
 为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
 
-## 仓库内容
+## :rabbit2:仓库内容
 
 | Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
 |:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JavaScript">JS 总结</a> |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试经历</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E7%AE%97%E6%B3%95">算法刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7">面试技巧</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93">工具总结</a>|   <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Questions">前端全家桶 </a>  | 
-## 项目经历
+## :tada:项目经历
 
 | 项目名称 |  时间    |项目地址|
 |:--------:| :-------------:| :-------------:|
 |     J2EE项目-OnlineSchool      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">码云地址</a>         |
 |  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://gitee.com/Chocolate666/vue_shop">码云地址</a> |
-|  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan  | 2020.03-至今 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">github地址</a>  |
+|  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan  | 2020.03-04 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">github地址</a>  | 
+| hexo-blog-lionkk（基于hexo-butterfly主题）| 2020.04-至今| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">github地址</a> |
 
-## 前言
+## :bulb:前言
 
 
 前端还是一个年轻的行业，新的行业标准， 框架， 库都不断在更新和新增，正如赫门在2015深JS大会上的《前端服务化之路》主题演讲中说的一句话：“每18至24个月，前端都会难一倍”，这些变化使前端的能力更加丰富、创造的应用也会更加完美。所以关注各种前端技术，跟上快速变化的节奏，也是身为一个前端程序员必备的技能之一。
@@ -36,7 +44,7 @@ https://yangchaoyi.vip/
 
 ><div>整理的仓库笔记目前还不全面，可能也会出现一些瑕疵问题，欢迎Star和提交issues。</div>
 
-## 面试注意点
+## :hourglass:面试注意点
 
 面试有几点需注意：(来源<a href="https://weibo.com/wintercn">寒冬winter </a>老师，github:@wintercn)
 
@@ -51,7 +59,7 @@ https://yangchaoyi.vip/
 
  5. 资深的前端开发能把absolute和relative弄混，这样的人不要也罢，因为团队需要的是：你这个人具有可以依靠的才能（靠谱）。
 
-## 仓库介绍
+## :pushpin:仓库介绍
 
 本仓库用于学习知识整理，并不是只关于前端知识，涉及面很广：
 
@@ -81,7 +89,7 @@ https://yangchaoyi.vip/
 博客地址：https://chocolate.blog.csdn.net/
 
 
-## 前端开发所需掌握知识点概要
+## :shaved_ice:前端开发所需掌握知识点概要
 
 - HTML&CSS：
 
@@ -97,7 +105,7 @@ https://yangchaoyi.vip/
     主流MVVM框架(React\Vue\Angular)、Hybrid App\React Native\Weex、TypeScript、RESTFul、WEB安全、前端工程化、依赖管理、性能优化、
     重构、团队协作、可维护、易用性、SEO、UED、前端技术选型、快速学习能力等
 
-## 前端学习网站推荐
+## :christmas_tree:前端学习网站推荐
 
 
 
@@ -123,7 +131,7 @@ https://yangchaoyi.vip/
 |           MDN                    |             <a href=" https://developer.mozilla.org/zh-CN/docs/Web/">https://developer.mozilla.org/zh-CN/docs/Web/</a>                                |      Web 开发技术分享               |
 
 
-## 官方文档推荐
+## :rice_scene:官方文档推荐
 
 - <a href="https://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery 基本原理</a>
 - <a href="https://es6.ruanyifeng.com/">ECMAScript 6 入门 作者：阮一峰</a>
@@ -135,21 +143,21 @@ https://yangchaoyi.vip/
 
 
 
-## 贡献
+## :gift_heart:贡献
 
 将会持续分享关于前端面试真题，从零到拿到满意的Offer！觉得不错，来个Star!
 
 同时，也欢迎你对本仓库的贡献，欢迎您的面试经验分享，如需贡献，公众号留言即可。
 
-## 版权申明
+## :sunflower:版权申明
 
 博客中的每篇文章都是我一字一句敲出来的，如需转载，请附上原文链接，表示对原作者的尊重。谢谢合作！
 
-## 排版
+## :page_with_curl:排版
 
 笔记内容按照 <a href="https://mazhuang.org/wiki/chinese-copywriting-guidelines/">中文文案排版指北</a>进行排版。
 
-## 结尾
+## :trophy:结尾
 
 <font color=chocolate>欢迎关注微信公众号：小狮子前端Vue</font>
 
@@ -159,4 +167,6 @@ https://yangchaoyi.vip/
 
 转载使用请注明出处，谢谢！
 
+## License
 
+MIT
