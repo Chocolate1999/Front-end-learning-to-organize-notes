@@ -1,0 +1,102 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+using namespace std;
+const int maxn=999999;
+int ans[maxn],one[maxn],zero[maxn],lft[maxn],rgt[maxn];
+char change[maxn];
+bool vis[maxn],ac[maxn];
+int cnt,n,q,f;
+//找到对应的状态下标
+int index(int p){
+    int x = 1;
+    if(p == 1)  //p为1表示当前为初始状态
+        return 0;
+    int i = 0;
+    while(++i){  //循环找出当前对应的状态下标
+        x <<= 1;
+        if(p == x)
+            return i; //找到即返回对应下标
+    }
+    return 0;
+}
+int moveT(int a, int b){
+    while(b){
+        int x = b&(-b);  //去当前集合中的最后一个节点
+        if(!(a&x))   //如果不存在该节点，加入集合当中
+            a ^= x;
+        b ^= x;  //已经存在该节点，就进行舍去操作
+    }
+    return a;
+}
+void dfs(int p){
+    ans[cnt] = p;
+    int lsum = 0, rsum = 0;
+    while(p){
+        int x = p&(-p);  //取出当前集合中的最后一个节点
+        int y = index(x); //找到对应的状态下标
+        lsum = moveT(lsum, zero[y]); //进行move操作
+        rsum = moveT(rsum, one[y]);  //进行move操作
+        p ^= x;   //将当前拿出来的节点从原集合中去掉
+    }
+    lft[cnt] = lsum;  //更新当前的状态集合
+    rgt[cnt] = rsum;  //更新当前的状态集合
+    cnt++;            //更新状态行数
+    if(!vis[lsum])
+        vis[lsum] = 1, dfs(lsum);  //进行去重操作
+    if(!vis[rsum])
+        vis[rsum] = 1, dfs(rsum); //进行去重操作
+}
+int main(){
+    int t;
+    cout<<"多组输入，请先输入对应的组数:"<<endl;
+    cin>>t;  //多组输入
+    while(t--){
+        cout << "输入各边的信息,并且以 '前点(char '0'-'1000')   转换字符(a 或 b)   后点(int '0'-'1000')'格式，结束以'$'开头" << endl;
+        char preNode,tchar,nexNode;
+        while(cin>>preNode){
+            if(preNode=='$') break;
+            cin>>tchar>>nexNode;
+            if(tchar-'a'==0) zero[preNode-'0']|=(1<<(nexNode-'0'));
+            else one[preNode-'0']|=(1<<(nexNode-'0'));
+        }
+        q=1;
+        cout<<"输入终止状态集合，结束以'$'开头"<<endl;
+        char endNode;
+        while(cin>>endNode){
+            if(endNode=='$') break;
+            f|=(1<<(endNode-'0'));
+        }
+        cnt=0;
+        memset(vis,0,sizeof(vis)); //初始化
+        memset(ac,0,sizeof(ac)); //初始化
+        vis[q]=1;
+        dfs(q);    //转换开始
+        int sum=0;
+        for(int i=0;i<cnt;i++)
+            if(ans[i]&f)   //判断所求集合中是否包含终态
+                ac[i]=1,sum++;  //标记终态集合并统计个数
+        for(int i=0;i<cnt;i++)
+            change[ans[i]]=i+'A';  //输出处理，用字母'A'-'Z'来表示集合
+        cout<<"转换结果:"<<endl;
+        cout<<"DFA的状态数:"<<cnt<<" "<<"终止状态数:"<<sum<<endl<<endl;
+        cout<<"终态:"<<endl;   //输出终态集合
+        for(int i=0,j=0;i<cnt;i++){
+            if(ac[i]){
+                if(j)
+                    cout<<" ";
+                cout<<(char)(i+'A');
+                j++;
+            }
+        }
+        cout<<endl<<endl; //输出DFA状态转换矩阵
+        cout<<"由NFA得到的DFA状态转换矩阵:"<<endl;
+        cout<<"----------------------------"<<endl;
+        cout<<"  "<<"a"<<" "<<"b"<<endl;
+        cout<<"----------------------------"<<endl;
+        for(int i=0;i<cnt;i++)  //输出打印新的转换结果
+            cout<<(char)('A'+i)<<" "<<change[lft[i]]<<" "<<change[rgt[i]]<<endl;
+        cout<<"----------------------------"<<endl;
+        cout<<endl;
+    }
+    return 0;
+}
