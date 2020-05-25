@@ -225,14 +225,17 @@ F F E
 <a href="https://blog.csdn.net/Hungryof/article/details/46822841?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-7.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-7.nonecase">Hungryof：NFA到DFA的转换</a>
 
 <a href="https://blog.csdn.net/u010563350/article/details/106114625">zhen12321：编译原理-(NFA->DFA)</a>
+
 <a href="https://blog.csdn.net/qq_43543789/article/details/105035332">
 发芽ing的小啊呜：【20200319】编译原理课程课业打卡九之NFA的确定化</a>
 
 <a href="https://www.cnblogs.com/pengfeiz/p/5974578.html">Just-Live：湖大OJ-实验C----NFA转换为DFA
 </a>
+
 <a href="https://blog.csdn.net/qq_40294512/article/details/89003655">爱玩游戏的小隐：正则到NFA的转换</a>
 
 <a href="https://blog.csdn.net/qq_40294512/article/details/89004777">爱玩游戏的小隐：NFA到DFA的转换及DFA的简化</a>
+
 ```cpp
 学如逆水行舟，不进则退
 ```
