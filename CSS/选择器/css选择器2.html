@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        .test1{
+            color: red;
+        }
+        .test1{
+            color: blue;
+        }
+        .test2{
+            color: red!important;
+        }
+        .test2{
+            color: blue;
+        }
+        #test3{
+            color: red;
+        }
+    </style>
+</head>
+<body class="body" id="body">
+    <div class="test1">蓝色</div>
+    <div class="test2">红色</div>
+    <div id="test3" style="color: blue;">蓝色</div>
+</body>
+</html>
