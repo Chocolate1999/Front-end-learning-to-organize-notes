@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局-flexbox</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            min-height: 200px;
+            display: flex;
+        }
+        .left{
+            width: 200px;
+            display: flex;
+            background: red;
+        }
+        .center{
+            background: yellow;
+            flex: 1;
+        }
+        .right{
+            width: 200px;
+            display: flex;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
