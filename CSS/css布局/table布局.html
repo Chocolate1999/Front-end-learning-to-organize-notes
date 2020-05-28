@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table布局</title>
+    <style>
+        .table{
+            margin-top: 20px;
+            width: 500px;
+            height: 100px;
+            display: table;
+        }
+        .table-row{
+            display: table-row;
+        }
+        .table-cell{
+            vertical-align: center;
+            display: table-cell;
+        }
+        .left{
+            background: red;
+            vertical-align: middle;
+        }
+        .right{
+            background: blue;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="table-row">
+            <div class="left table-cell">left</div>
+            <div class="right table-cell">right</div>
+        </div>
+    </div>
+</body>
+</html>
