@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清楚浮动</title>
+    <style>
+        .container{
+            background: red;
+            width: 400px;
+        }
+        .p1{
+            background: pink;
+            float: left;
+            width: 200px;
+            height: 50px;
+        }
+        .removeFloat::after{
+            content: 'aaa';
+            clear: both; /*保证当前元素左右没有浮动元素*/
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container removeFloat">
+        <span>xxxxxx</span>
+        <span class="p1">float</span>
+        <span class="p1">float</span>
+    </div>
+    <div class="container" style="height: 200px; background: blue;">
+        <p>第一行</p>
+        <p>第二行</p>
+        <p>第三行</p>
+    </div>
+</body>
+</html>
