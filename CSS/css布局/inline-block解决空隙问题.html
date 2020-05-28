@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block布局</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 200px;
+            font-size: 0;
+        }
+        .left{
+            font-size: 15px;
+            background: red;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+        .right{
+            font-size: 15px;
+            background: blue;
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
