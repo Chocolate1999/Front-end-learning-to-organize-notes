@@ -30,6 +30,7 @@ body{
 node-sass test.scss
 ```
 ![](https://img-blog.csdnimg.cn/20200529162015247.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjQyOTcxOA==,size_16,color_FFFFFF,t_70)
+
 执行如下命令，输出到 `test-scss.css` 文件中
 ```css
 node-sass test.scss > test-scss.css
