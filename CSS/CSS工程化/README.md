@@ -58,3 +58,37 @@ PostCSS 支持的构建工具
 - JS是整个应用的核心入口
 - 一切资源均由JS管理依赖
 - 一切资源均由webpack打包
+
+
+### webpack 和 CSS
+- css-loader 将 CSS变为 JS
+- style-loader 将JS插入到head
+- ExtractTextPlugin 将 CSS 从 JS 中 提取出来
+- CSS modules 解决 CSS命名冲突的问题
+- less-loader sass-loader 各类预处理器
+- postcss-loader PostCSS处理
+
+
+## CSS 面试真题
+
+### 如何解决CSS模块化问题
+- less sass 等CSS预处理器
+- PostCSS插件（postcss-import / precss等）
+- webpackl处理CSS（css-loader + style-loader）
+
+### PostCSS可以做什么？
+- 取决于插件做什么
+- autoprefixer cssnext precss等 兼容性处理
+- import 模块合并
+- css语法检查 兼容性检查
+- cssnano  压缩文件
+
+### CSS modules是做什么的，如何使用
+- 解决类名冲突的问题
+- 使用PostCSS或者webpack等构建工具进行编译
+- 在HTML模板中使用编译过程产生的类名
+
+### 为什么使用JS来引用、加载CSS
+- JS作为入口，管理资源有天然优势
+- 将组件的结构、样式、行为封装到一起，增强内聚
+- 可以做更多处理（webpack）
