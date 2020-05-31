@@ -1,0 +1,99 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+using namespace std;
+const int maxn=100+5;
+char buf[maxn];   //输入产生式
+int n;   //产生式的数量
+class node{
+public:
+    string left;
+    set<string> right;
+    node(const string& str){
+        left=str;
+        right.clear();
+    }
+    void push(const string& str){
+        right.insert(str);
+    }
+    void print(){
+        printf("%s->",left.c_str());
+        set<string>::iterator it = right.begin();
+        printf("%s",it->c_str());
+        it++;
+        for (;it!= right.end();it++ )
+            printf("|%s",it->c_str());
+        cout<<endl;
+    }
+};
+map<string,int> mp;  //记录每个node的下标
+vector<node> vnode;  //每一个产生式
+string start;   //文法G[s]
+bool used[maxn];  //用于去掉无用产生式
+//初始化工作
+void init(){
+    mp.clear();
+    vnode.clear();
+    start="S";
+}
+//消除间接左递归
+void eliminateIndirectLeftRecursion(){
+    for(int i=0;i<vnode.size();i++){
+        for(int j=0;j<i;j++){
+            vector<string> ans;
+            set<string>& righti=vnode[i].right;
+            set<string>& rightj=vnode[j].right;
+            char ch=vnode[j].left[0]; //取所有Aj产生式的左部的非终结符
+            set<string>::iterator iti,itj;
+            for(iti=righti.begin();iti!=righti.end();iti++){
+                if(iti->at(0)==ch) //如果当前产生式右部的非终结符和Aj相同
+                    for(itj=rightj.begin();itj!=rightj.end();itj++)
+                        ans.push_back(*itj+iti->substr(1));   //进行替换操作,先存储起来
+            }
+            int num=righti.size();
+            for(int k=0;k<num;k++){
+                if(righti.begin()->at(0)!=ch) //存储当前没有替换的产生式右部
+                    ans.push_back(*righti.begin());
+                righti.erase(righti.begin());  //被替换过的产生式右部也删除掉
+            }
+            for(int k=0;k<ans.size();k++)  //将替换过的产生式右部进行更新操作
+                righti.insert(ans[k]);
+        }
+    }
+}
+//消除直接左递归
+void eliminateDirectLeftRecursion(){
+
+}
+int main(){
+    cout<<"请输入文法G[S]的产生式数量："<<endl;
+    while(cin>>n){
+        init(); //初始化
+        getchar();
+        for(int i=0;i<n;i++){
+            scanf("%s",buf); //输入产生式
+            int len=strlen(buf),j;
+            for(j=0;j<len;j++)
+                if(buf[j]==':'){
+                    buf[j]=0;  //进行左部和右部切分
+                    break;
+                }
+            string tmp=buf; //拿到产生式的左部
+            if(!mp[buf]){
+                vnode.push_back(node(tmp));
+                mp[tmp]=vnode.size();
+            }
+            int idx=mp[tmp]-1;  //获取左部的下标
+            tmp=buf+j+3;  //拿到产生式的右部
+            vnode[idx].push(tmp);
+        }
+        eliminateIndirectLeftRecursion(); //消除间接左递归
+        //eliminateDirectLeftRecursion(); //消除直接左递归
+        /*
+        *test
+        */
+        cout<<"---------test---------"<<endl;
+        for(int k=0;k<vnode.size();k++)
+            vnode[k].print();
+    }
+    return 0;
+}
