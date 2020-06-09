@@ -1,0 +1,9 @@
+8
+E->E+T
+E->T
+T->T*F
+T->F
+F->P^F
+F->P
+P->(E)
+P->i
