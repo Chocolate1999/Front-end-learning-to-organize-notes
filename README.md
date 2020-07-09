@@ -31,7 +31,7 @@ https://yangchaoyi.vip/
 | 项目名称 |  时间    |项目地址|
 |:--------:| :-------------:| :-------------:|
 |     J2EE项目-OnlineSchool      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">码云地址</a>         |
-|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://gitee.com/Chocolate666/vue_shop">码云地址</a> |
+|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://github.com/Chocolate1999/vue-shop">github地址</a> |
 |  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan  | 2020.03-04 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">github地址</a>  | 
 | hexo-blog-lionkk（基于hexo-butterfly主题）| 2020.04-至今| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">github地址</a> |
 
