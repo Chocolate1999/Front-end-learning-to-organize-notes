@@ -2,7 +2,7 @@
 
 ##  :sunny:Front-end-learning-to-organize-notes
 
-<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://Chocolate1999.github.io/img/avatar.png" alt="Blog logo"></a> </p>
+<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png" alt="Blog logo"></a> </p>
 
 <p align="center">
 <a href="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes"><img src="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="HitCount"></a><a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a></p>
