@@ -1,11 +1,7 @@
-
-
 ##  :sunny:Front-end-learning-to-organize-notes
 
-<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png" alt="Blog logo"></a> </p>
-
 <p align="center">
-<a href="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes"><img src="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="HitCount"></a><a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a></p>
+<a href="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes"><img src="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="HitCount"></a><a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a><img src="https://camo.githubusercontent.com/cb8cb80af654f3dae14a4aa62e44bf62f16953d6/68747470733a2f2f6a617977636a6c6f76652e6769746875622e696f2f73622f6c616e672f6368696e6573652e737667"></img></p>
 
 ## :seedling:仓库地址
 
@@ -13,6 +9,59 @@
 
 ## :loudspeaker:公告
 感谢访问本站，若喜欢请收藏，star支持一下 ✿✿ヽ(°▽°)ノ✿
+
+##  :sunny:小狮子前端Vue进阶小册 食堂开饭啦
+
+<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png" alt="Blog logo"></a> </p>
+
+## :seedling:前端下饭厨师长の自我介绍
+大家好，我是 **Chocolate**，计算机领域的 `ycy`，CSDN博客专家，平常习惯就是写博客，总结所学知识，因为我觉得计算机领域知识特别多，并且更新速度很快，今天才学的东西明天就更新换代都是可能的，并且知识如果不长期巩固是容易遗忘的，写博客总结就是一个很好的输入输出过程。
+
+ 考虑了许久之后，还是申请了这个专栏。与其说是专栏，我还是更喜欢叫它小册，因为我更想让它成为一本书籍。那么你食用这本小册能够学到什么？
+
+
+<a href="https://blog.csdn.net/weixin_42429718/article/details/107134349">小狮子前端Vue进阶小册 开通食用指北</a>
+
+## :pushpin:小册介绍
+
+本小册用于学习知识整理，并不是只关于前端知识，涉及面很广：
+
+- 1、Vue源码分析
+- 2、手把手教 保姆级 撸代码
+- 3、无惧面试，学以致用，继承创新
+- 4、谈谈前端发展与学习心得
+- 5、手写源码技术栈，附上详细注释
+- 6、从源码中学习设计模式，一举两得
+- 7、编程思想的提升及代码质量的提高
+- 8、通过分析源码学习架构，看看优秀的框架
+- 9、项目实战开发
+- 10、面试准备，完善个人简历
+- 11、经典面试题整理
+- 12、算法刷题题库思路整理
+- 13、面试经历分享
+- 14、好书推荐，日常生活记录
+- 15、未完待续...
+
+
+## :loudspeaker:适宜人群
+-  希望入门前端、寻找学习资料的小白
+- 具备基本的 JavaScript、HTML 等前端技能，希望进一步提升自己的开发者
+- 技术栈主要为 Vue 的程序员们
+- 希望寻找一个更好工作机会的开发者
+- 希望了解前端的大致知识框架的开发者
+- 希望了解大厂常考知识点的开发者
+- 为面试实习找工作做准备的求职者
+- 需要灵感的面试官
+- 愿意为博主打赏，请博主冰阔落的 dalao 们
+
+## :balloon: 购买须知
+本小册每篇博文几乎是上万字，预计会发布50篇左右原创文章。
+全部文章预计 2021年6月23日之后不再更新；
+购买用户可享有小册永久的阅读权限；
+本小册为虚拟内容服务，一经购买成功概不退款；
+小册版权归作者所有，任何机构、媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发布/发表，违者将依法追究责任；
+在小册阅读过程中，如有任何问题，可以私信博主。
+
 
 
 ## :snowman:笔记网站（更新）
@@ -30,10 +79,12 @@ https://yangchaoyi.vip/
 
 | 项目名称 |  时间    |项目地址|
 |:--------:| :-------------:| :-------------:|
-|     J2EE项目-OnlineSchool      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">码云地址</a>         |
-|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://github.com/Chocolate1999/vue-shop">github地址</a> |
-|  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan  | 2020.03-04 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">github地址</a>  | 
-| hexo-blog-lionkk（基于hexo-butterfly主题）| 2020.04-至今| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">github地址</a> |
+|     J2EE项目-OnlineSchool（前后端分离的IT教育网站）      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">传送门</a>         |
+|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://github.com/Chocolate1999/vue-shop">传送门</a> |
+|  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan（高仿美团）  | 2020.03-2020.04 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">传送门</a>  | 
+| hexo-blog-lionkk（基于hexo-butterfly:butterfly:主题魔改博客源码开放）| 2020.04-2020.07| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">传送门</a> |
+| vue-shop（ :cat: Vue全家桶开发电商管理系统（Element-UI 重制上线版））| 2020.06-2020.07|  <a href="https://github.com/Chocolate1999/vue-shop">传送门</a>|
+| Vue-MVVM（:star:剖析vue实现原理，动手实现一个简单版的mvvm:+1:）|  2020.07 | <a href="https://github.com/Chocolate1999/Vue-MVVM">传送门</a> |   
 
 ## :bulb:前言
 
