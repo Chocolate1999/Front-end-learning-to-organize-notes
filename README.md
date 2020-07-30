@@ -80,7 +80,7 @@ https://yangchaoyi.vip/
 | 项目名称 |  时间    |项目地址|
 |:--------:| :-------------:| :-------------:|
 |     J2EE项目-OnlineSchool（前后端分离的IT教育网站）      |     2019.07-2019.12  |  <a href="https://gitee.com/miaochuanpeng/Java-EE">传送门</a>         |
-|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://github.com/Chocolate1999/vue-shop">传送门</a> |
+|  Vue全家桶开发电商管理系统（Element-UI） | 2019.12-2020.01|<a href="https://gitee.com/Chocolate666/vue_shop">传送门</a> |
 |  Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan（高仿美团）  | 2020.03-2020.04 |<a href="https://github.com/Chocolate1999/Vue-family-bucket-SSR-Koa2-full-stack-development-from-Meituan">传送门</a>  | 
 | hexo-blog-lionkk（基于hexo-butterfly:butterfly:主题魔改博客源码开放）| 2020.04-2020.07| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">传送门</a> |
 | vue-shop（ :cat: Vue全家桶开发电商管理系统（Element-UI 重制上线版））| 2020.06-2020.07|  <a href="https://github.com/Chocolate1999/vue-shop">传送门</a>|
