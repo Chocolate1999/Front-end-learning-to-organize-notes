@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>节流</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: #38b99b;
+        font-size: 30px;
+        line-height: 200px;
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      var oBox = document.getElementsByClassName('box')[0]
+
+      let cnt = 0
+      let addSomething = () => {
+        oBox.innerHTML = ++cnt
+      }
+      let throttle = (fn,time) => {
+        let flag = true
+        let timeout = null
+        let throttled = (...args) => {
+          if(!flag) return
+          flag = false
+          clearTimeout(timeout)
+          timeout = setTimeout(()=>{
+            fn.apply(this,args)
+            flag = true
+          },time)
+        }
+        return throttled
+      }
+      oBox.onmouseover = throttle(addSomething, 2000)
+    </script>
+  </body>
+</html>
