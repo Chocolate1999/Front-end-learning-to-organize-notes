@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>防抖</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: #38b99b;
+        font-size: 30px;
+        line-height: 200px;
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      var oBox = document.getElementsByClassName('box')[0]
+      // let cnt = 0
+      // var timeout = null
+      // oBox.onmouseover = function(){
+      //   // oBox.innerHTL =  ++cnt
+      //   clearTimeout(timeout)
+      //   timeout = setTimeout(()=>{
+      //     oBox.innerHTML =  ++cnt
+      //   },2000)
+      // }
+      let cnt = 0
+      let addSomething = () => {
+        oBox.innerHTML = ++cnt
+      }
+      let debounce = (fn, time, triggerNow) => {
+        let timeout = null
+        let debounced = (...args) => {
+          if (timeout) {
+            clearTimeout(timeout)
+          }
+          if (triggerNow) {
+            let exec = !timeout
+            timeout = setTimeout(() => {
+              timeout = null
+            }, time)
+            if (exec) {
+              fn.apply(this, args)
+            }
+          } else {
+            timeout = setTimeout(() => {
+              fn.apply(this, args)
+            }, time)
+          }
+        }
+        debounced.remove = () => {
+          clearTimeout(timeout)
+          timeout = null
+        }
+        return debounced
+      }
+      oBox.onmouseover = debounce(addSomething, 2000, false)
+    </script>
+  </body>
+</html>
