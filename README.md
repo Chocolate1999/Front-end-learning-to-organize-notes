@@ -12,7 +12,15 @@
 
 ##  :sunny:小狮子前端Vue进阶小册 食堂开饭啦
 
-<p align="center"> <a href="https://yangchaoyi.vip" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png" alt="Blog logo"></a> </p>
+![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20200902104534.png)
+
+<a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试记录传送门</a>
+
+## :rabbit2:仓库内容
+
+| Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
+|:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JavaScript">JS 总结</a> |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试经历</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/LeetCode%E5%8A%9B%E6%89%A3">LeetCode刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7">面试技巧</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93">工具总结</a>|   <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Questions">前端全家桶 </a>  | 
 
 ## :seedling:前端下饭厨师长の自我介绍
 大家好，我是 **Chocolate**，计算机领域的 `ycy`，CSDN博客专家，平常习惯就是写博客，总结所学知识，因为我觉得计算机领域知识特别多，并且更新速度很快，今天才学的东西明天就更新换代都是可能的，并且知识如果不长期巩固是容易遗忘的，写博客总结就是一个很好的输入输出过程。
@@ -70,11 +78,9 @@ https://yangchaoyi.vip/
 
 为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
 
-## :rabbit2:仓库内容
 
-| Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
-|:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JavaScript">JS 总结</a> |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试经历</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E7%AE%97%E6%B3%95">算法刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7">面试技巧</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93">工具总结</a>|   <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Questions">前端全家桶 </a>  | 
+
+
 ## :tada:项目经历
 
 | 项目名称 |  时间    |项目地址|
@@ -147,7 +153,7 @@ https://yangchaoyi.vip/
 |:--------:| :-------------:|:-------------:|
 | OSCHINA | <a href=" https://www.oschina.net/">https://www.oschina.net/</a> |  中文开源技术交流社区|
 |       九章算法                        |                 <a href="https://www.jiuzhang.com/"> https://www.jiuzhang.com/</a>                            |           硅谷顶尖IT人员教授面试技巧          |
-|         LintCode                       |            <a href=" https://www.lintcode.com/"> https://www.lintcode.com/</a>                                 |         空前强大的在线刷题系统            |
+|         LeetCode                       |            <a href=" https://leetcode-cn.com/problemset/all/">https://leetcode-cn.com/problemset/all/</a>                                 |         面试找工作必刷            |
 |             CSDN                   |            <a href=" https://chocolate.blog.csdn.net/"> https://chocolate.blog.csdn.net/</a>                                 |        优秀的博客           |
 |            掘金                   |         <a href="https://juejin.im/">https://juejin.im/</a>                                    |   帮助开发者成长的社区                  | 
 |          开源社区_深度开源                     |         <a href="https://www.open-open.com/">https://www.open-open.com/</a>                                    |       一切开源              |
