@@ -14,7 +14,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20200902104534.png)
 
-<a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Record">面试记录传送门</a>
+<a href="https://yangchaoyi.vip/posts/20200902/">秋招投递清单传送门</a>
 
 ## :rabbit2:仓库内容
 
