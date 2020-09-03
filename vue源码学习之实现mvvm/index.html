@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+</head>
+
+<body>
+  <div id="app">
+    <h2>{{person.name}}--{{person.age}}</h2>
+    <h3>{{person.hobby}}</h3>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <h3>{{msg}}</h3>
+    <div v-text="msg"></div>
+    <div v-text="person.name"></div>
+    <div v-html="htmlStr"></div>
+    <input type="text" v-model="msg">
+    <button v-on:click="sayHi">按钮v-on</button>
+    <button @click="sayHi">按钮@</button>
+  </div>
+
+  <script src="./myVue.js"></script>
+  <script src="./Compile.js"></script>
+  <script src="./Observer.js"></script>
+  <script src="./Watcher.js"></script>
+  <script>
+    var vm = new myVue({
+      el: '#app',
+      data: {
+        person:{
+          name: 'Chocolate',
+          age: 20,
+          hobby: '写代码'
+        },
+        msg: '超逸の技术博客',
+        htmlStr: '<h3>欢迎一起学习~</h3>'
+      },
+
+      methods: {
+        sayHi() {
+          //this.msg = 'Welcome, everybody!'
+          this.person.name = '超逸'
+          //this.$data.person.name = 'Chaoyi'
+          console.log(this)
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
