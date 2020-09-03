@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圆环进度条</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .wrapper {
+        position: relative;
+        width: 95px;
+        height: 200px;
+        overflow: hidden;
+      }
+      .rightcircle {
+        position: absolute;
+        width: 176px;
+        height: 176px;
+        top: 0;
+        right: 0;
+        border: 8px solid transparent;
+        border-top: 8px solid #38b99b;
+        border-right: 8px solid #38b99b;
+        border-radius: 50%;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        animation: circle_right 5s linear infinite;
+      }
+      .leftcircle {
+        position: absolute;
+        width: 176px;
+        height: 176px;
+        top: 0;
+        left: 0;
+        border: 8px solid transparent;
+        border-bottom: 8px solid #38b99b;
+        border-left: 8px solid #38b99b;
+        border-radius: 50%;
+        transform: rotate(135deg);
+        animation: circle_left 5s linear infinite;
+      }
+      @keyframes circle_right {
+        0% {
+          transform: rotate(-135deg);
+        }
+        50%,
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+      @keyframes circle_left {
+        0%,
+        50% {
+          transform: rotate(-135deg);
+        }
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 左边半圆环 -->
+      <div class="wrapper">
+        <div class="leftcircle"></div>
+      </div>
+      <!-- 右边半圆环 -->
+      <div class="wrapper">
+        <div class="rightcircle"></div>
+      </div>
+    </div>
+  </body>
+</html>

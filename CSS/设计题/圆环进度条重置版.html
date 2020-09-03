@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圆环进度条重置版</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .content {
+        width: 88px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+      }
+      .rightcircle {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-right: 8px solid #38b99b;
+        border-top: 8px solid #38b99b;
+        transform: rotate(-135deg);
+        top: 0;
+        right: 0;
+        animation: circle_right 5s linear infinite;
+      }
+      @keyframes circle_right {
+        0% {
+          transform: rotate(-135deg);
+        }
+        50%,
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+      .leftcircle {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-left: 8px solid #38b99b;
+        border-bottom: 8px solid #38b99b;
+        transform: rotate(135deg);
+        top: 0;
+        left: 0;
+        animation: circle_left 5s linear infinite;
+      }
+      @keyframes circle_left {
+        0%,
+        50% {
+          transform: rotate(-135deg);
+        }
+        100% {
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="leftcircle"></div>
+      </div>
+      <div class="content">
+        <div class="rightcircle"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倒计时</title>
+</head>
+<body>
+  <section>
+    <p>倒计时</p>
+    <span class="daySpan"></span>
+    <span class="hourSpan"></span>
+    <span class="minuSpan"></span>
+    <span class="secondSpan"></span>
+  </section>
+  <script>
+    let daySpan = document.querySelector('.daySpan')
+    let hourSpan = document.querySelector('.hourSpan')
+    let minuSpan = document.querySelector('.minuSpan')
+    let secondSpan = document.querySelector('.secondSpan')
+    let deadLine = new Date('2020-11-11 00:00')
+    let countDown = () =>{
+      let timeout = deadLine - new Date()
+      if(timeout < 0) return 0
+      let day = Math.floor(timeout/1000/60/60/24)
+      let hour = Math.floor(timeout/1000/60/60%24)
+      let minu = Math.floor(timeout/1000/60%60)
+      let second = Math.floor(timeout/1000%60)
+      daySpan.innerHTML = day + '天'
+      hourSpan.innerHTML = hour + '时'
+      minuSpan.innerHTML = minu + '分'
+      secondSpan.innerHTML = second + '秒'
+      setTimeout(countDown,1000)
+    }
+    countDown()
+  </script>
+</body>
+</html>
