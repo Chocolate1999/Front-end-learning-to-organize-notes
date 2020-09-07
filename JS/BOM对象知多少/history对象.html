@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>history对象</title>
+</head>
+<body>
+  <script>
+    /* 对于 `history` 对象，这里不太方便展示，就以文字表述了。常用的方法就是 `go` 方法，值设置为 `0` 代表刷新，值为 `1` 代表向前导航，值为 `-1` 代表向后找历史导航。 */
+    console.log(history)
+    setTimeout(function(){
+      history.go(0) //每隔2秒进行刷新
+    },2000)
+  </script>
+</body>
+</html>
