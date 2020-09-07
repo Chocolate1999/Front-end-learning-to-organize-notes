@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>位置操作</title>
+</head>
+<body>
+  <script>
+    // 2秒之后调到某个网站（会产生历史记录，即点击后退按钮会返回原页面）
+    setTimeout(function(){
+      location.href = 'https://yangchaoyi.vip/'
+    },2000)
+
+    // 2秒之后调到某个网站（不会产生历史记录)
+    setTimeout(function(){
+      location.replace('https://yangchaoyi.vip/')
+    },2000)
+
+    // 2秒之后进行重载
+    setTimeout(function(){
+      location.reload()
+    },2000)
+  </script>
+</body>
+</html>
