@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定时器方法</title>
+  </head>
+  <body>
+    <script>
+      window.setTimeout(function () {
+        console.log(2)
+      }, 0)
+      console.log(1)
+      let num = 0
+      let timeId = null
+      timeId = window.setInterval(function() {
+        num++
+        if(num > 5){
+          clearInterval(timeId)
+          return 
+        }
+        console.log(num)
+      },1000)
+    </script>
+  </body>
+</html>
