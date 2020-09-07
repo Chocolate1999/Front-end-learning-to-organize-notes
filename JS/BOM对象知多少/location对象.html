@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>location对象</title>
+</head>
+<body>
+  <from>
+    <input type="text" name="user">
+    <input type="password" name="pwd">
+    <input type="submit">
+  </from>
+  <script>
+    console.log(location.host) // 打印服务器地址+端口号
+    console.log(location.hostname) // 返回服务器地址（没有端口号）
+    console.log(location.port) // 打印服务器端口号
+    console.log(location.search) // 打印地址栏查询条件
+    console.log(location.href) // 打印完整url（已经进行了编码）
+    console.log(location.pathname) // 打印文件目录路径
+    console.log(location.protocol) // 打印协议
+  </script>
+</body>
+</html>
