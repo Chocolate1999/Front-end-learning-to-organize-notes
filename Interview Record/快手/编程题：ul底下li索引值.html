@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>编程题：ul底下li索引值（多个ul）</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <script>
+      let list = document.getElementsByTagName('ul')
+      for (let i = 0; i < list.length; i++) {
+        list[i].addEventListener('click', (e) => {
+          let target = e.target
+          // console.log(target)
+          if (target.tagName.toLowerCase() === 'li') {
+            let liList = list[i].getElementsByTagName('li')
+            // console.log(liList)
+            // getElementsByTagName方法获取到的元素列表不是数组，
+            // 和函数的arguments一样是一种类数组类型，不可以直接使用数组的方法。
+            let idx = Array.prototype.indexOf.call(liList, target)
+            /* 或者采用如下方式，将类数组转换成数组，然后使用indexOf方法 */
+            // let idx = Array.from(liList).indexOf(target)
+            console.log(liList)
+            console.log(idx)
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
