@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>垂直居中实现方式</title>
+    <style>
+      /* 通过line-height实现单行文本垂直居中 */
+      .container {
+        width: 200px;
+        line-height: 100px;
+        background: red;
+        text-align: center;
+      }
+      /* 使用table 和 table-cell 实现多行文本垂直居中 */
+      .table {
+        width: 200px;
+        height: 100px;
+        background: blue;
+        display: table;
+      }
+      .table .table-cell {
+        display: table-cell;
+        height: 50px;
+        vertical-align: middle;
+      }
+      /* absolute居中 上下左右0 + margin:auto */
+      .container2 {
+        width: 200px;
+        height: 100px;
+        background: forestgreen;
+        position: relative;
+      }
+      .content2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: yellow;
+      }
+      /* absolute 居中 + transform */
+      .container3 {
+        width: 200px;
+        height: 100px;
+        background: red;
+        color: #fff;
+        position: relative;
+      }
+      .container3 .content3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: blue;
+        transform: translateX(-50%) translateY(-100%);
+      }
+      /* 知道自身盒子宽高，absolute固定自减居中 */
+      .container4 {
+        width: 200px;
+        height: 100px;
+        background: gray;
+        position: relative;
+      }
+      .content4 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 50%;
+        top: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        background: yellow;
+      }
+      /* flex布局 */
+      .container5 {
+        width: 200px;
+        height: 100px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content5 {
+        width: 50px;
+        height: 50px;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>单行文本垂直居中</p>
+    </div>
+    <div class="table">
+      <p class="table-cell">多行文本table块垂直居中</p>
+    </div>
+    <div class="container2">
+      <p class="content2">垂直居中2</p>
+    </div>
+    <div class="container3">
+      <p class="content3">垂直居中3</p>
+    </div>
+    <div class="container4">
+      <p class="content4">垂直居中4</p>
+    </div>
+    <div class="container5">
+      <p class="content5">垂直居中5</p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+  css-水平居中、垂直居中（初级篇）
+  https://juejin.im/post/6844903535369273358
+  垂直居中实现方式总结
+  https://my.oschina.net/u/2282680/blog/784838
+ -->

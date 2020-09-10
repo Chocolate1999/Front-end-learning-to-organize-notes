@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>元素p内的文字最终什么颜色</title>
+    <style>
+      .classA {
+        color: blue;
+      }
+      .classB {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="classB classA">hello</p>
+  </body>
+</html>
+<!-- 
+为什么CSS选择器是从右往左解析
+
+https://blog.csdn.net/jinboker/article/details/52126021
+
+
+CSS解析原理
+https://aadonkeyz.com/posts/df6afb91/
+ -->

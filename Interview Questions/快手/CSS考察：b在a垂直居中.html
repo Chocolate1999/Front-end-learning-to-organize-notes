@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS考察: b在a中垂直居中</title>
+    <style>
+        .a {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            background: #f00;
+            position: relative; /* add */
+        }
+
+        .b {
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            background: #00f;
+            padding: 10%;
+            /* 添加如下代码 */
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+</body>
+
+</html>

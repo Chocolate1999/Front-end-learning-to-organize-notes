@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ul中有li，点击li，获得对应的序号</title>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <script>
+      let list = document.querySelectorAll('li')
+      console.log(list.length)
+      /* let 方式遍历解决 */
+      for(let i=0;i<list.length;i++){
+        list[i].addEventListener('click',()=>{
+          console.log(i+1)
+        })
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+  使用原生js给每个li绑定onclick点击事件,输出每条li的下标（索引）的几种方式
+  https://blog.csdn.net/qq_42072844/article/details/106627015
+ -->
