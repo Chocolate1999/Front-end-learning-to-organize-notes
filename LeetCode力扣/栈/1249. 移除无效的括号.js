@@ -16,7 +16,7 @@ var minRemoveToMakeValid = function(s) {
   }
   while(stack.length){
       let idx = stack.pop()
-      delete(res[i])
+      delete(res[idx])
   }
   res = res.filter(item=>item)
   return res.join('')
