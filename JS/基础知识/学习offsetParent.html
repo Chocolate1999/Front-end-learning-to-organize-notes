@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习offsetParent</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="father" style="position: relative;">
+      <div id="con"></div>
+    </div>
+    <script>
+      let oDiv = document.getElementById('con')
+      console.log(oDiv.offsetParent)
+    </script>
+  </body>
+</html>

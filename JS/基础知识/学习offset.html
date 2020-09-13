@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>offset家族</title>
+    <style>
+      body {
+        border: 20px solid #ccc;
+        margin: 10px;
+        padding: 40px;
+        background: #eee;
+      }
+      #con {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        background: #f60;
+        border: 5px solid #888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- offset 偏移量 
+    1.定位父级 offsetParent
+    2.offsetLeft offsetTop
+    3.offsetHeight offsetWeight
+  -->
+  <div id="con"></div>
+  <script>
+    let oDiv = document.getElementById('con')
+    oDiv.innerHTML ="<p>offsetLeft:"+oDiv.offsetLeft+"</p>"+
+                    "<p>offsetTop:"+oDiv.offsetTop+"</p>"+
+                    "<p>offsetWidth:" + oDiv.offsetWidth + "</p>" +
+                    "<p>offsetHeight:"+oDiv.offsetHeight+"</p>"
+  </script>
+</body>
+</html>
