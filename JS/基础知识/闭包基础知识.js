@@ -50,3 +50,18 @@
 // breadMgr[1]();
 
 
+function sunSched(){
+  var sunSched = '';
+  var operation = {
+    setSched: function(thing){
+      sunSched = thing;
+    },
+    showSched: function(){
+      console.log("My Schedule on sunday is " + sunSched);
+    }
+  }
+  return operation;
+}
+var sunSched = sunSched();
+sunSched.setSched('studying');
+sunSched.showSched();
