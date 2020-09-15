@@ -185,36 +185,38 @@ AO = {
 */
 
 
-// a = 1;
-// function test(e){
-//   function e(){}
-//   arguments[0] = 2;
-//   console.log(e); 
-//   if(a){
-//     var b = 3;
-//   }
-//   var c;
-//   a = 4;
-//   var a;
-//   console.log(b); 
-//   f = 5;
-//   console.log(c); 
-//   console.log(a); 
-// }
-// var a;
-// test(1);
+a = 1;
+function test(e){
+  function e(){}
+  arguments[0] = 2;
+  console.log(e); 
+  if(a){
+    var b = 3;
+  }
+  var c;
+  a = 4;
+  var a;
+  console.log(b); 
+  f = 5;
+  console.log(c); 
+  console.log(a); 
+}
+var a;
+test(1);
+console.log(a);
+console.log(f);
 
 /*
 GO = {
   a: undefined -> 1
   test: function(){...}
+  f: undefined -> 5
 }
 AO = {
   e: undefined -> 1 -> function e(){} -> 2
   b: undefined 
   a: undefined -> 4
   c: undefined 
-  f: undefined -> 5
 }
 */
 
@@ -241,5 +243,5 @@ AO = {
 
 // console.log(!!' ' + !!'' - !!false || '未通过');
 
-window.a || (window.a = '1')
-console.log(window.a)
+// window.a || (window.a = '1')
+// console.log(window.a)
