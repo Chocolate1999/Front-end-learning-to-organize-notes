@@ -57,9 +57,40 @@
   2、返回值：负值，a 就排在前面
             正值，b 就排在前面
             0， 保持不动
-*/
-var arr = [27, 49, 5, 7];
-arr.sort((a,b)=>a-b);
-console.log(arr); // [ 5, 7, 27, 49 ]
-arr.sort((a,b)=>b-a);
-console.log(arr); // [ 49, 27, 7, 5 ]
+// */
+// var arr = [27, 49, 5, 7];
+// arr.sort((a,b)=>a-b);
+// console.log(arr); // [ 5, 7, 27, 49 ]
+// arr.sort((a,b)=>b-a);
+// console.log(arr); // [ 49, 27, 7, 5 ]
+
+// var arr1 = ['a', 'b', 'c'];
+// var arr2 = ['d', 'e', 'f'];
+// var arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
+// var arr = [1, 2, 3];
+// var arr1 = arr.toString();
+// console.log(arr); // [ 1, 2, 3 ]
+// console.log(arr1); // 1,2,3
+
+// var arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+// var arr1 = arr.slice(1);
+// console.log(arr1); // [ 'b', 'c', 'd', 'e', 'f' ]
+
+// var arr = ['a','b','c','d'];
+// var str1 = arr.join();
+// var str2 = arr.toString();
+// var str3 = arr.join('');
+// console.log(str1); // a,b,c,d
+// console.log(str2); // a,b,c,d
+// console.log(str3); // abcd
+
+
+var arr = ['a', 'b', 'c', 'd'];
+var str1 = arr.join('-');
+console.log(str1); // a-b-c-d
+var arr1 = str1.split('-')
+console.log(arr1); // [ 'a', 'b', 'c', 'd' ]
+var arr2 = str1.split('-', 3)
+console.log(arr2); // [ 'a', 'b', 'c' ]
