@@ -129,3 +129,107 @@
 // persons[2] = { name: 'leo', age: 18 };
 // console.log(persons, arr);
 
+// var obj = {a:1,b:2};
+// // 1.获取原型 [[GetPrototypeOf]]
+// var proto = Object.getPrototypeOf(obj);
+// console.log(proto);
+// console.log(obj.__proto__);
+// console.log(Object.prototype);
+
+// var obj = { a: 1, b: 2 };
+// // 2.设置原型 [[SetPrototypeOf]]
+// Object.setPrototypeOf(obj, { c: 3, d: 4 });
+// // 同样也可以采用如下两种方式，直接赋值
+// // obj.__proro__ = xxx;
+// // Object.prototype = xxx;
+// console.log(obj);
+
+// var obj = { a: 1, b: 2 };
+// // 3.获取对象的可拓展性 [[IsExtensible]]
+// var extensible = Object.isExtensible(obj);
+// console.log(extensible);
+// // 冻结属性
+// Object.freeze(obj);
+// var extensible2 = Object.isExtensible(obj);
+// console.log(extensible2);
+
+// var obj = { a: 1, b: 2 };
+// Object.seal(obj);
+// obj.c = 3;  // 不可修改
+// console.log(obj);
+// delete obj.a; // 不可删除
+// console.log(obj);
+// obj.b = 3; // 可写
+// console.log(obj);
+
+// var obj = { a: 1, b: 2 };
+// Object.freeze(obj);
+// obj.c = 3;  // 不可修改
+// console.log(obj);
+// delete obj.a; // 不可删除
+// console.log(obj);
+// obj.b = 3; // 不可写
+// console.log(obj);
+// for (var key in obj) {
+//   console.log(obj[key]);
+// }
+// var obj = { a: 1, b: 2 };
+// // 4.获取自有属性 [[getOwnProperty]]
+// Object.setPrototypeOf(obj, { c: 3, d: 4 });
+// console.log(Object.getOwnPropertyNames(obj));
+
+// var obj = { a: 1, b: 2 };
+// // 5.禁止拓展对象 [[PreventExtensions]]
+// Object.preventExtensions(obj);
+// obj.c = 3;
+// console.log(obj);
+// delete obj.a;
+// console.log(obj);
+
+
+// var obj = { a: 1, b: 2 };
+// 6.拦截对象操作 [[DefineOwnProperty]]
+// Object.defineProperty()
+
+// var obj = { a: 1, b: 2 };
+// // 7.判断是否是自身属性 [[HasProperty]]
+// console.log(obj.hasOwnProperty('a'));
+
+// var obj = { a: 1, b: 2 };
+// // 8.获取对象属性 [[Get]]
+// console.log('c' in obj);
+// console.log('a' in obj);
+// console.log(obj.a);
+
+// var obj = { a: 1, b: 2 };
+// // 9.设置对象属性 [[SET]]
+// obj.a = 3;
+// obj['b'] = 4;
+// console.log(obj);
+
+
+// var obj = { a: 1, b: 2 };
+// // 10.删除对象属性 [[Delete]]
+// delete obj.a;
+// console.log(obj);
+
+// var obj = { a: 1, b: 2 };
+// // 11. 枚举 [[Enumerate]]
+// for (var k in obj) {
+//   console.log(obj[k]);
+// }
+
+// var obj = { a: 1, b: 2 };
+// // 12.获取键集合 [[OwnPropertyKeys]]
+// console.log(Object.keys(obj));
+
+// // 13.调用函数
+// var obj = { a: 1, b: 2 };
+// function test() { }
+// test();
+// obj.test = function () { }
+// obj.test();
+// function Test() { };
+// new Test();
+
+
