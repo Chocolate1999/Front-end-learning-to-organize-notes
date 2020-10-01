@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>content动态数据获取</title>
+  <style type="text/css">
+    p::before{
+      content: attr(data-username);
+    }
+  </style>
+</head>
+<body>
+  <p data-username="Chocolate">,欢迎您的来访!</p>
+</body>
+</html>
