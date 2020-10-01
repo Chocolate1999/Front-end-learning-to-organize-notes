@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除浮动方式1</title>
+  <style type="text/css">
+    .box {
+      width: 200px;
+      border: 1px solid #000;
+    }
+
+    .box .inner-box{
+      float: left;
+      width: 100px;
+      height: 100px;
+    }
+
+    .box .inner-box.box1{
+      background-color: green;
+    }
+
+    .box .inner-box.box2{
+      background-color: orange;
+    }
+
+    .clearfix{
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="inner-box box1"></div>
+    <div class="inner-box box2"></div>
+    <p class="clearfix"></p>
+  </div>
+</body>
+</html>
