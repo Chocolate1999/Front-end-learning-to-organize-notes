@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>清除浮动方式3</title>
+  <title>清除浮动方式2</title>
   <style type="text/css">
-    .clearfix::after{
+    ul::after,
+    div::after{
       content: "";
       display: block;
       clear: both;
@@ -15,6 +16,12 @@
       width: 200px;
       border: 10px solid #000;
     }
+    /* 下面这种方式也可以，但没有上述直接设置div好 */
+    /* .box::after{
+      content: "";
+      display: block;
+      clear: both;
+    } */
 
     .box .inner-box{
       float: left;
@@ -32,7 +39,7 @@
   </style>
 </head>
 <body>
-  <div class="box clearfix">
+  <div class="box">
     <div class="inner-box box1"></div>
     <div class="inner-box box2"></div>
   </div>
