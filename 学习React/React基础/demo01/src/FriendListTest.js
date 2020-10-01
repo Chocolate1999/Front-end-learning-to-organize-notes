@@ -12,8 +12,8 @@ class FriendListTest extends Component {
     return (
       <Fragment>
         <div>
-          <input ></input>
-          <button>增加小朋友</button>
+          <input value={this.state.inputVal} onChange={this.inputChange.bind(this)}></input>
+          <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
         <ul>
           {
@@ -24,6 +24,18 @@ class FriendListTest extends Component {
         </ul>
       </Fragment>
     )
+  }
+  inputChange(e){
+    this.setState({
+      inputVal: e.target.value,
+
+    })
+  }
+  addFriendsList(e){
+    this.setState({
+      list: [...this.state.list, this.state.inputVal],
+      inputVal: ''
+    })
   }
 }
 
