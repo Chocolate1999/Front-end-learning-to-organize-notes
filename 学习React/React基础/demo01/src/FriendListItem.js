@@ -12,6 +12,10 @@ class FriendListItem extends Component {
   componentWillReceiveProps(){
     console.log('child-componentWillReceiveProps');
   }
+  // 组件删除的时候来执行
+  componentWillUnmount(){
+    console.log('child-componentWillUnmount');
+  }
 
   render() { 
     return (  
