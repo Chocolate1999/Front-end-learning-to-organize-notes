@@ -10,7 +10,18 @@ class FriendListTest extends Component {
     }
     this.deleteItem = this.deleteItem.bind(this)
   }
+
+  componentWillMount(){
+    console.log('componentWillMount-----组件将要挂到页面的时刻');
+  }
+
+  componentDidMount(){
+    console.log('componentDidMount-----组件挂载完成的时刻');
+  }
+
+
   render() {
+    console.log('render-----组件挂载中');
     return (
       <Fragment>
         <div>
