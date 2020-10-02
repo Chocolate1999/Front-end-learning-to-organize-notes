@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'antd/dist/antd.css'
 import { Input, Button, List } from 'antd'
 import store from './store'
+import {CHANGE_INPUT, ADD_ITEM, DELETE_ITEM} from './store/actionTypes'
 class TodoList extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +46,7 @@ class TodoList extends Component {
   changeInputValue(e) {
     // 创建Action,action就是一个对象
     const action = {
-      type: 'change_input_value',
+      type: CHANGE_INPUT,
       value: e.target.value
     }
     store.dispatch(action)
@@ -53,13 +54,13 @@ class TodoList extends Component {
 
   // 监听增加按钮绑定事件
   clickBtn() {
-    const action = { type: 'addItem' }
+    const action = { type: ADD_ITEM }
     store.dispatch(action)
   }
   // 列表选项删除事件
   deleteItem(index) {
     const action = {
-      type: 'deleteItem',
+      type: DELETE_ITEM,
       index
     }
     store.dispatch(action)
