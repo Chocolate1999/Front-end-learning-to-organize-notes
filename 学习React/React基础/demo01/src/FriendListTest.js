@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import './style.css'
 import FriendListItem from './FriendListItem';
 import axios from 'axios'
+import {CSSTransition , TransitionGroup} from 'react-transition-group'
+
 class FriendListTest extends Component {
   constructor(props) {
     super(props);
@@ -57,19 +59,29 @@ class FriendListTest extends Component {
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
         <ul ref={(ul) => { this.ul = ul }}>
-          {
-            this.state.list.map((item, index) => {
-              return (
-                <FriendListItem
-                  key={index + item}
-                  idx={index}
-                  content={item}
-                  index={index}
-                  deleteItem={this.deleteItem}
-                />
-              )
-            })
-          }
+          <TransitionGroup>
+            {
+              this.state.list.map((item, index) => {
+                return (
+                  <CSSTransition
+                    timeout={1000}
+                    classNames='boss-text'
+                    unmountOnExit
+                    appear={true}
+                    key={index + item}
+                  >
+                    <FriendListItem
+                      key={index + item}
+                      idx={index}
+                      content={item}
+                      index={index}
+                      deleteItem={this.deleteItem}
+                    />
+                  </CSSTransition>
+                )
+              })
+            }
+          </TransitionGroup>
         </ul>
       </Fragment>
     )
