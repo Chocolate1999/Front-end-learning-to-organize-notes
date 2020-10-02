@@ -6,6 +6,9 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = store.getState();
+    this.changeInputValue = this.changeInputValue.bind(this);
+    this.storeChange = this.storeChange.bind(this);
+    store.subscribe(this.storeChange); //订阅Redux的状态
   }
   render() {
     return (
@@ -14,6 +17,8 @@ class TodoList extends Component {
           <Input
             placeholder={this.state.inputValue}
             style={{ width: '250px', marginRight: '10px' }}
+            onChange={this.changeInputValue}
+            value={this.state.inputValue}
           />
           <Button type="primary">增加</Button>
         </div>
@@ -26,6 +31,18 @@ class TodoList extends Component {
         </div>
       </div>
     );
+  }
+  // 监听input输入事件
+  changeInputValue(e) {
+    // 创建Action,action就是一个对象
+    const action = {
+      type: 'change_input_value',
+      value: e.target.value
+    }
+    store.dispatch(action)
+  }
+  storeChange() {
+    this.setState(store.getState())
   }
 }
 
