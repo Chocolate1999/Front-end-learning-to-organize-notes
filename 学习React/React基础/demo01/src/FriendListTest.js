@@ -22,7 +22,7 @@ class FriendListTest extends Component {
             this.state.list.map((item, index) => {
               return (
                 <div>
-                  <FriendListItem/>
+                  <FriendListItem content={item}/>
                 </div>     
               )
             })
