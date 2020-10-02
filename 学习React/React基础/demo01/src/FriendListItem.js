@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+// 引入属性校验
+import PropTypes from 'prop-types'
+
 class FriendListItem extends Component {
   constructor(props){
     super(props);
@@ -15,5 +18,10 @@ class FriendListItem extends Component {
     this.props.deleteItem(this.props.index);
   }
 }
- 
+FriendListItem.propTypes={
+  content: PropTypes.string,
+  index: PropTypes.number,
+  deleteItem: PropTypes.func
+}
+
 export default FriendListItem;
