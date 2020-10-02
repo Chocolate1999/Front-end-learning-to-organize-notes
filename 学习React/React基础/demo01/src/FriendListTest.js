@@ -13,6 +13,7 @@ class FriendListTest extends Component {
     return (
       <Fragment>
         <div>
+          <label htmlFor="ipt">增加服务</label>
           <input id="ipt" className="input" value={this.state.inputVal} onChange={this.inputChange.bind(this)}></input>
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
