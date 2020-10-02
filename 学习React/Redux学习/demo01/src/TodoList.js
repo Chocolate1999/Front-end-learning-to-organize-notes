@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css'
-import { Input, Button, List } from 'antd'
 import store from './store'
-// import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM } from './store/actionTypes'
 import { changeInputAction, addItemAction, delItemAction } from './store/actionCreaters'
+import TodoListUI from './TodoListUI';
 class TodoList extends Component {
   constructor(props) {
     super(props);
@@ -11,31 +9,18 @@ class TodoList extends Component {
     this.changeInputValue = this.changeInputValue.bind(this);
     this.storeChange = this.storeChange.bind(this);
     this.clickBtn = this.clickBtn.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
     store.subscribe(this.storeChange); //订阅Redux的状态
   }
   render() {
     return (
-      <div style={{ margin: '10px' }}>
-        <div>
-          <Input
-            placeholder={this.state.inputValue}
-            style={{ width: '250px', marginRight: '10px' }}
-            onChange={this.changeInputValue}
-            value={this.state.inputValue}
-          />
-          <Button
-            type="primary"
-            onClick={this.clickBtn}
-          >增加</Button>
-        </div>
-        <div style={{ margin: '10px', width: '300px' }}>
-          <List
-            bordered
-            dataSource={this.state.list}
-            renderItem={(item, index) => (<List.Item onClick={this.deleteItem.bind(this, index)}>{item}</List.Item>)}
-          ></List>
-        </div>
-      </div>
+      <TodoListUI
+        inputValue={this.state.inputValue}
+        changeInputValue={this.changeInputValue}
+        clickBtn={this.clickBtn}
+        list={this.state.list}
+        deleteItem={this.deleteItem}
+      />
     );
   }
 
