@@ -7,17 +7,27 @@ class FriendListItem extends Component {
     super(props);
     this.handleClick=this.handleClick.bind(this)
   }
-  // 组件第一次存在于dom中，函数是不会执行的
-  // 如果已经存在于dom中，函数才会被执行
-  componentWillReceiveProps(){
-    console.log('child-componentWillReceiveProps');
-  }
-  // 组件删除的时候来执行
-  componentWillUnmount(){
-    console.log('child-componentWillUnmount');
+  // // 组件第一次存在于dom中，函数是不会执行的
+  // // 如果已经存在于dom中，函数才会被执行
+  // componentWillReceiveProps(){
+  //   console.log('child-componentWillReceiveProps');
+  // }
+  // // 组件删除的时候来执行
+  // componentWillUnmount(){
+  //   console.log('child-componentWillUnmount');
+  // }
+  
+  // 进行组件性能优化，当内容不相同时，才进行渲染，否则不进行
+  shouldComponentUpdate(nextProps, nextState){
+    if(nextProps.content !== this.props.content){
+      return true;
+    }else{
+      return false;
+    }
   }
 
   render() { 
+    console.log('child-render');
     return (  
     <li onClick={this.handleClick}>
       {this.props.firstName}-{this.props.idx}-{this.props.content}

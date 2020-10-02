@@ -11,30 +11,30 @@ class FriendListTest extends Component {
     this.deleteItem = this.deleteItem.bind(this)
   }
 
-  componentWillMount(){
-    console.log('componentWillMount-----组件将要挂到页面的时刻');
-  }
+  // componentWillMount(){
+  //   console.log('componentWillMount-----组件将要挂到页面的时刻');
+  // }
 
-  componentDidMount(){
-    console.log('componentDidMount-----组件挂载完成的时刻');
-  }
+  // componentDidMount(){
+  //   console.log('componentDidMount-----组件挂载完成的时刻');
+  // }
 
-  shouldComponentUpdate(){
-    console.log('1-shouldComponentUpdate');
-    // 如果返回false，后面两步都不会执行了。
-    return true;
-  }
+  // shouldComponentUpdate(){
+  //   console.log('1-shouldComponentUpdate');
+  //   // 如果返回false，后面两步都不会执行了。
+  //   return true;
+  // }
 
-  componentWillUpdate(){
-    console.log('2-componentWillUpdate');
-  }
+  // componentWillUpdate(){
+  //   console.log('2-componentWillUpdate');
+  // }
 
-  componentDidUpdate(){
-    console.log('4-componentDidUpdate');
-  }
+  // componentDidUpdate(){
+  //   console.log('4-componentDidUpdate');
+  // }
 
   render() {
-    console.log('3-render-----组件挂载中');
+    // console.log('3-render-----组件挂载中');
     return (
       <Fragment>
         <div>
