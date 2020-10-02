@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import './style.css'
 
 class FriendListTest extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class FriendListTest extends Component {
     return (
       <Fragment>
         <div>
-          <input value={this.state.inputVal} onChange={this.inputChange.bind(this)}></input>
+          <input id="ipt" className="input" value={this.state.inputVal} onChange={this.inputChange.bind(this)}></input>
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
         <ul>
@@ -22,8 +23,8 @@ class FriendListTest extends Component {
                 <li 
                   key={index + item}
                   onClick={this.deleteItem.bind(this,index)}
+                  dangerouslySetInnerHTML = {{__html: item}}
                 >
-                  {item}
                 </li>
               )
             })
