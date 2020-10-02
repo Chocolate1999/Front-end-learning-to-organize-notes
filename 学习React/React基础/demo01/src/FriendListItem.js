@@ -9,7 +9,9 @@ class FriendListItem extends Component {
   }
   render() { 
     return (  
-    <li onClick={this.handleClick}>{this.props.content}</li>
+    <li onClick={this.handleClick}>
+      {this.props.idx}-{this.props.content}
+    </li>
     );
   }
   // 子组件监听
@@ -19,6 +21,7 @@ class FriendListItem extends Component {
   }
 }
 FriendListItem.propTypes={
+  idx: PropTypes.number.isRequired,
   content: PropTypes.string,
   index: PropTypes.number,
   deleteItem: PropTypes.func

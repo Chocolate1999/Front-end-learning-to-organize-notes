@@ -24,6 +24,7 @@ class FriendListTest extends Component {
               return (
                 <FriendListItem
                   key={index + item}
+                  idx={index}
                   content={item}
                   index={index}
                   deleteItem={this.deleteItem}
