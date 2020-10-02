@@ -8,6 +8,7 @@ class FriendListTest extends Component {
       inputVal: 'Chocolate',
       list: ['mick', 'jack']
     }
+    this.deleteItem = this.deleteItem.bind(this)
   }
   render() {
     return (
@@ -21,9 +22,12 @@ class FriendListTest extends Component {
           {
             this.state.list.map((item, index) => {
               return (
-                <div>
-                  <FriendListItem content={item}/>
-                </div>     
+                <FriendListItem
+                  key={index + item}
+                  content={item}
+                  index={index}
+                  deleteItem={this.deleteItem}
+                />
               )
             })
           }
@@ -32,23 +36,23 @@ class FriendListTest extends Component {
     )
   }
   // 监听输入框
-  inputChange(e){
+  inputChange(e) {
     this.setState({
       inputVal: e.target.value,
 
     })
   }
   // 增加列表项
-  addFriendsList(e){
+  addFriendsList(e) {
     this.setState({
       list: [...this.state.list, this.state.inputVal],
       inputVal: ''
     })
   }
   // 删除列表项
-  deleteItem(index){
+  deleteItem(index) {
     let list = this.state.list;
-    list.splice(index,1);
+    list.splice(index, 1);
     this.setState({
       list: list
     })
