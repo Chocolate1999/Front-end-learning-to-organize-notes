@@ -36,6 +36,11 @@ class TodoList extends Component {
       </div>
     );
   }
+
+  storeChange() {
+    this.setState(store.getState())
+  }
+
   // 监听input输入事件
   changeInputValue(e) {
     // 创建Action,action就是一个对象
@@ -45,9 +50,7 @@ class TodoList extends Component {
     }
     store.dispatch(action)
   }
-  storeChange() {
-    this.setState(store.getState())
-  }
+
   // 监听增加按钮绑定事件
   clickBtn() {
     const action = { type: 'addItem' }
