@@ -15,7 +15,13 @@ class FriendListTest extends Component {
       <Fragment>
         <div>
           <label htmlFor="ipt">增加服务</label>
-          <input id="ipt" className="input" value={this.state.inputVal} onChange={this.inputChange.bind(this)}></input>
+          <input 
+            id="ipt" 
+            className="input" 
+            value={this.state.inputVal} 
+            onChange={this.inputChange.bind(this)}
+            ref={(input)=>{this.input = input}}
+          />
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
         <ul>
@@ -39,8 +45,8 @@ class FriendListTest extends Component {
   // 监听输入框
   inputChange(e) {
     this.setState({
-      inputVal: e.target.value,
-
+      // inputVal: e.target.value,
+      inputVal: this.input.value
     })
   }
   // 增加列表项
