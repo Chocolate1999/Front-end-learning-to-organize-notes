@@ -10,7 +10,7 @@ class FriendListItem extends Component {
   render() { 
     return (  
     <li onClick={this.handleClick}>
-      {this.props.idx}-{this.props.content}
+      {this.props.firstName}-{this.props.idx}-{this.props.content}
     </li>
     );
   }
@@ -20,11 +20,16 @@ class FriendListItem extends Component {
     this.props.deleteItem(this.props.index);
   }
 }
+// PropTypes校验传递的值
 FriendListItem.propTypes={
   idx: PropTypes.number.isRequired,
   content: PropTypes.string,
   index: PropTypes.number,
   deleteItem: PropTypes.func
+}
+// defaultProps默认值
+FriendListItem.defaultProps={
+  firstName: 'Yang'
 }
 
 export default FriendListItem;
