@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'antd/dist/antd.css'
 import { Input, Button, List } from 'antd'
 import store from './store'
-import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM } from './store/actionTypes'
+// import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM } from './store/actionTypes'
 import { changeInputAction, addItemAction, delItemAction } from './store/actionCreaters'
 class TodoList extends Component {
   constructor(props) {
