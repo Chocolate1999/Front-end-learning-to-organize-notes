@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './style.css'
 import FriendListItem from './FriendListItem';
+import axios from 'axios'
 class FriendListTest extends Component {
   constructor(props) {
     super(props);
@@ -33,22 +34,29 @@ class FriendListTest extends Component {
   //   console.log('4-componentDidUpdate');
   // }
 
+  // 使用axios
+  componentDidMount() {
+    axios.post('https://web-api.juejin.im/v3/web/wbbr/bgeda')
+      .then((res) => { console.log('axios 获取数据成功:' + JSON.stringify(res)) })
+      .catch((error) => { console.log('axios 获取数据失败' + error) })
+  }
+
   render() {
     // console.log('3-render-----组件挂载中');
     return (
       <Fragment>
         <div>
           <label htmlFor="ipt">增加服务</label>
-          <input 
-            id="ipt" 
-            className="input" 
-            value={this.state.inputVal} 
+          <input
+            id="ipt"
+            className="input"
+            value={this.state.inputVal}
             onChange={this.inputChange.bind(this)}
-            ref={(input)=>{this.input = input}}
+            ref={(input) => { this.input = input }}
           />
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
-        <ul ref={(ul)=>{this.ul = ul}}>
+        <ul ref={(ul) => { this.ul = ul }}>
           {
             this.state.list.map((item, index) => {
               return (
@@ -78,7 +86,7 @@ class FriendListTest extends Component {
     this.setState({
       list: [...this.state.list, this.state.inputVal],
       inputVal: ''
-    },()=>{
+    }, () => {
       // 因为this.setState属于异步方法，不在回调函数里面执行的话
       // 长度会少一个，因为不会等待更新成功，console.log(xxx)属于同步方法
       // 因此setState又添加了一个回调函数，等待它执行完后，再执行我们的同步方法
