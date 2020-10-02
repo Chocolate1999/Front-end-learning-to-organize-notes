@@ -24,7 +24,7 @@ class FriendListTest extends Component {
           />
           <button onClick={this.addFriendsList.bind(this)}>增加小朋友</button>
         </div>
-        <ul>
+        <ul ref={(ul)=>{this.ul = ul}}>
           {
             this.state.list.map((item, index) => {
               return (
@@ -54,6 +54,12 @@ class FriendListTest extends Component {
     this.setState({
       list: [...this.state.list, this.state.inputVal],
       inputVal: ''
+    },()=>{
+      // 因为this.setState属于异步方法，不在回调函数里面执行的话
+      // 长度会少一个，因为不会等待更新成功，console.log(xxx)属于同步方法
+      // 因此setState又添加了一个回调函数，等待它执行完后，再执行我们的同步方法
+      // 这个和Vue中$nextTick()类似
+      console.log(this.ul.querySelectorAll('li').length);
     })
   }
   // 删除列表项
