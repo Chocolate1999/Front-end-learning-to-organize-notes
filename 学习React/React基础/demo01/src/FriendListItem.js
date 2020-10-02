@@ -7,6 +7,12 @@ class FriendListItem extends Component {
     super(props);
     this.handleClick=this.handleClick.bind(this)
   }
+  // 组件第一次存在于dom中，函数是不会执行的
+  // 如果已经存在于dom中，函数才会被执行
+  componentWillReceiveProps(){
+    console.log('child-componentWillReceiveProps');
+  }
+
   render() { 
     return (  
     <li onClick={this.handleClick}>
