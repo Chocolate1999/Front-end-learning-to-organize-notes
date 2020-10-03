@@ -6,14 +6,15 @@ class TodoList extends Component {
     return (
       <div>
         <div>
-          <input 
-            value={this.props.inputValue} 
-            onChange={this.props.inputChange} 
-          />
-          <button>提交</button>
+          <input value={this.props.inputValue} onChange={this.props.inputChange} />
+          <button onClick={this.props.clickButton}>提交</button>
         </div>
         <ul>
-          <li>Chocolate</li>
+          {
+            this.props.list.map((item, index) => {
+              return (<li key={index}>{item}</li>)
+            })
+          }
         </ul>
       </div>
     );
@@ -23,7 +24,8 @@ class TodoList extends Component {
 // 映射关系就是把原来的state映射成组件中的props属性
 const stateToProps = (state) => {
   return {
-    inputValue: state.inputValue
+    inputValue: state.inputValue,
+    list: state.list
   }
 }
 
@@ -35,6 +37,10 @@ const dispatchToProps = (dispatch) => {
         type: 'change_input',
         value: e.target.value
       }
+      dispatch(action)
+    },
+    clickButton() {
+      let action = { type: 'add_item' }
       dispatch(action)
     }
   }
