@@ -13,7 +13,7 @@ class List extends Component {
   }
 
   render() {
-  return (<h2>List Page -> {this.state.id}</h2>);
+    return (<h2>List Page -{">"}  {this.state.id}</h2>);
   }
 }
 
