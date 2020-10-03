@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import store from './store';
 import { connect } from 'react-redux';  //引入连接器
 
 class TodoList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = store.getState();
-  }
   render() {
     return (
       <div>
         <div>
-          <input value={this.props.inputValue} onChange={this.props.inputChange} />
+          <input 
+            value={this.props.inputValue} 
+            onChange={this.props.inputChange} 
+          />
           <button>提交</button>
         </div>
         <ul>
