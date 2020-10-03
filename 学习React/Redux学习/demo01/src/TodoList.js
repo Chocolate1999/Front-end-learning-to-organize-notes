@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import store from './store'
 import { changeInputAction, addItemAction, delItemAction } from './store/actionCreaters'
 import TodoListUI from './TodoListUI';
+import axios from 'axios';
 class TodoList extends Component {
   constructor(props) {
     super(props);
@@ -22,6 +23,9 @@ class TodoList extends Component {
         deleteItem={this.deleteItem}
       />
     );
+  }
+
+  componentDidMount() {
   }
 
   storeChange() {
