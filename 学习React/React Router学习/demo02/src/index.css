@@ -20,5 +20,22 @@ body{
   height:1000px;
   background-color: #fff;
   font-size:20px;
+}
 
+.topNav{
+  height:50px ;
+  background-color: #cfdefd;
+}
+.topNav ul{
+ display: flex; 
+ margin: 0px;
+ padding: 0px;
+}
+.topNav li{
+ padding: 10px;
+ text-align: center;
+ list-style: none;
+}
+.videoContent{
+   padding:20px;
 }
