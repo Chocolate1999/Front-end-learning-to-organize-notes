@@ -8,11 +8,11 @@ function AppRouter() {
     <Router>
         <ul>
             <li> <Link to="/">首页</Link> </li>
-            <li><Link to="/list/">列表</Link> </li>
+            <li><Link to="/list/123">列表</Link> </li>
         </ul>
         {/* 精准匹配，路径信息要完全匹配成功，才可以实现跳转，匹配一部分是不行的 */}
         <Route path="/" exact component={Index} />
-        <Route path="/list/" component={List} />
+        <Route path="/list/:id" component={List} />
     </Router>
   );
 }
