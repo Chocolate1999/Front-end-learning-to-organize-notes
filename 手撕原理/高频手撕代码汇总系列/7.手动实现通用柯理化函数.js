@@ -18,4 +18,4 @@ function currying(fn, ...args) {
 }
 
 let addSum = currying(add)(1,2);
-console.log(addSum(3)(4));
+console.log(addSum(3)(4)); // 10
