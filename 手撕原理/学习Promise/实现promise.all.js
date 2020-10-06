@@ -1,22 +1,23 @@
 Promise.myAll = (arr) => {
-  return new Promise((resolve,reject)=>{
-    if(arr.length === 0){
+  return new Promise((resolve, reject) => {
+    if (arr.length === 0) {
       return resolve([])
-    }else{
+    } else {
       let res = [], cnt = 0
-      for(let i=0;i<arr.length;i++){
-        if(!(arr[i] instanceof Promise)){
+      for (let i = 0; i < arr.length; i++) {
+        if (!(arr[i] instanceof Promise)) {
           res[i] = arr[i]
-          if(++cnt === arr.length){
+          if (++cnt === arr.length) {
             resolve(res)
           }
-        }else{
-          arr[i].then(data=>{
+        } else {
+          arr[i].then(data => {
+            console.log(data);
             res[i] = arr[i]
-            if(++cnt === arr.length){
+            if (++cnt === arr.length) {
               resolve(res)
             }
-          },err=>{
+          }, err => {
             reject(err)
           })
         }
@@ -29,16 +30,16 @@ Promise.myAll = (arr) => {
 // 测试用例
 let p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-      resolve(11)
+    resolve(11)
   }, 2000);
 });
-let p2 = new Promise((resolve, reject) => {
-  reject('asfs')
+// let p2 = new Promise((resolve, reject) => {
+//   reject('asfs')
 
-});
+// });
 let p3 = new Promise((resolve) => {
   setTimeout(() => {
-      resolve(33);
+    resolve(33);
   }, 4);
 });
 
