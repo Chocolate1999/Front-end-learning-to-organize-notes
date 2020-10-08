@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实现图片懒加载</title>
+  <style type="text/css">
+    img{
+      display: block;
+      height: 320px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <img src="default.png" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595328889118&di=1665d7e122bc96be92d0f3e1b2f5e302&imgtype=0&src=http%3A%2F%2Fwork.361ser.com%2FContent%2Fueditor%2Fnet%2Fupload%2Fimage%2F20171014%2F6364359407281350179759303.jpg" />
+  <script>
+    let imgs = document.getElementsByTagName('img');
+    let len = imgs.length;
+    let cnt = 0;
+    function lazyLoad(){
+      let viewH = document.body.clientHeight;
+      let scrollTop = document.body.scrollTop;
+      for(let i=cnt;i<len;i++){
+        if(imgs[i].offsetHeight < viewH + scrollTop){
+          if(imgs[i].getAttribute('src') === 'default.png'){
+            imgs[i].src = imgs[i].getAttribute('data-src');
+            cnt++;
+          }
+        }
+      }
+    }
+
+    function throttle(fn,time){
+      let timeId = null;
+      let flag = true;
+      return (...args) => {
+        if(!flag) return;
+        flag = false;
+        clearTimeout(timeId);
+        timeId = setTimeout(()=>{
+          flag = true;
+          fn.apply(this,args);
+        },time)
+      }
+    }
+
+    window.addEventListener('scroll', throttle(lazyLoad,1000))
+        
+    lazyLoad();  // 首次加载
+  </script>
+</body>
+</html>
