@@ -12,7 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   // 配置 source-map ，打包出错定位到源码上
-  devtools: 'source-map',
+  devtool: 'source-map',
   resolve: {
     modules: [path.resolve(__dirname, ''), path.resolve(__dirname, 'node_modules')]
   },
