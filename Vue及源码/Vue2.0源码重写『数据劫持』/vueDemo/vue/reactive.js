@@ -10,6 +10,8 @@ function defineReactiveData(data, key, val) {
     set(newVal) {
       console.log('响应式数据-设置', newVal);
       if (newVal === val) return;
+      // 可能更新的这个newVal 还是一个对象或者数组，我们需要再观察一下
+      observe(newVal); 
       val = newVal;
     }
   })

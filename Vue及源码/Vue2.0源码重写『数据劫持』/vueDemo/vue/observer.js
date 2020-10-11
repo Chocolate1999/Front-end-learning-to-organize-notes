@@ -1,8 +1,11 @@
 import defineReactiveData from './reactive';
+import observerArr from './observerArr';
+import { arrMethods } from './array';
 function Observer(data) {
   // 处理数组
   if (Array.isArray(data)) {
-
+    data.__proto__ = arrMethods; // 将重写数组的prototype替换到data上的prototype
+    observerArr(data); // 可能数组里面还有数组，我们还需要再次观察一下
   } else {
     this.walk(data);
   }
