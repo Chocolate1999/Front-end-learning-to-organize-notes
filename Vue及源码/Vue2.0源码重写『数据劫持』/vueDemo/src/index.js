@@ -22,4 +22,4 @@ let vm = new Vue({
   }
 })
 
-console.log(vm._data.title); // 学生列表
+console.log(vm.title); // 学生列表
