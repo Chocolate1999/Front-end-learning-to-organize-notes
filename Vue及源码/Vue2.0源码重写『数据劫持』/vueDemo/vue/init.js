@@ -1,4 +1,5 @@
 import proxyData from './proxy';
+import observe from './observe'
 function initState(vm) {
   var options = vm.$options;
   // 判断 data 是否存在
@@ -15,6 +16,9 @@ function initData(vm) {
   for (var key in data) {
     proxyData(vm, '_data', key);
   }
+
+  // 观察 data
+  observe(vm._data);
 }
 
 export {

@@ -8,6 +8,12 @@ let vm = new Vue({
       classNum: 1,
       total: 2,
       teachers: ['张三', '李四'],
+      info:{
+        club:{
+          name: '篮球',
+          num: 30
+        }
+      },
       students: [
         {
           id: 1,
@@ -23,3 +29,4 @@ let vm = new Vue({
 })
 
 console.log(vm.title); // 学生列表
+console.log(vm.info);
