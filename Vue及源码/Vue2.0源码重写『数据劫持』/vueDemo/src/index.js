@@ -21,3 +21,5 @@ let vm = new Vue({
     }
   }
 })
+
+console.log(vm._data.title); // 学生列表

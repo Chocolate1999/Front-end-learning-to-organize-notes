@@ -1,3 +1,5 @@
+import {initState} from './init'
+
 function Vue(options) {
   this._init(options);
 }
