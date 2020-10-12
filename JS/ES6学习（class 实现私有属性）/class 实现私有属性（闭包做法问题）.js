@@ -27,3 +27,5 @@ console.log(classc1.getX()); // 4
 for (let key in classc1) {
   console.log(key);
 }
+
+console.log(classc1 instanceof classC);
