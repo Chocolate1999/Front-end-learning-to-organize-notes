@@ -22,3 +22,8 @@ console.log(classc1.getX()); // 3
 let classc2 = new classC(4);
 /* 出现了问题：实例之间会共享变量 */
 console.log(classc1.getX()); // 4
+
+
+for (let key in classc1) {
+  console.log(key);
+}
