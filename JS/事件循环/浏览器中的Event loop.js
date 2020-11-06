@@ -28,21 +28,11 @@ console.log('script end')
 
 /**
  * script start
+ * async2 end
+ * Promise
+ * script end
+ * async1 end
+ * promise1
+ * promise2
+ * setTimeout
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// script start => async2 end => Promise => script end => promise1 => promise2 => async1 end => setTimeout
