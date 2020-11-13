@@ -40,3 +40,32 @@
 <a href="https://juejin.im/post/6844904070889603085">(建议收藏)TCP协议灵魂之问，巩固你的网路底层基础</a>
 
 <a href="https://juejin.im/post/6844904168549777422">🐲【2】ShutdownHTTP系列-HTTP报文篇</a>
+
+
+
+- 11月12日 周四
+
+上午
+
+>复习HTTP基础、HTTP报文
+
+
+下午
+
+>讲解Cookie，预习HTTPS篇
+
+晚7点30
+
+>操场跑步30分钟
+
+**复习资料：**
+
+<a href="https://juejin.im/post/6844904070889603085">(建议收藏)TCP协议灵魂之问，巩固你的网路底层基础</a>
+
+<a href="https://juejin.im/post/6844904127466569736">🐲【1】ShutdownHTTP系列-基础篇</a>
+
+<a href="https://juejin.im/post/6844904168549777422">🐲【2】ShutdownHTTP系列-HTTP报文篇</a>
+
+<a href="https://juejin.im/post/6861605642256252936">🐲【3】Shutdown HTTP系列-Cookie篇</a>
+
+<a href="https://juejin.im/post/6889068972542459917">🐲【4】Shutdown HTTP系列-HTTPS篇</a>
