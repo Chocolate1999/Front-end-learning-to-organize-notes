@@ -6,4 +6,4 @@ function foo(){
     console.log(b);
   }
 }
-foo();
+foo(); 
