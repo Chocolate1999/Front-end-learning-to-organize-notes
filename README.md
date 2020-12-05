@@ -197,6 +197,8 @@ https://yangchaoyi.vip/iBook/ （基于vuepress搭建的前端学习笔记，目
 
 <font color=chocolate>欢迎关注微信公众号：小狮子前端Vue</font>
 
+![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20201202223856.jpg)
+
 谢谢您的支持！✿✿ヽ(°▽°)ノ✿
 
 注：本仓库不参与商业行为，也请各位读者周知。(This warehouse is not involved in commercial activities.)
