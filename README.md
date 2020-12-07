@@ -195,7 +195,7 @@ https://yangchaoyi.vip/iBook/ （基于vuepress搭建的前端学习笔记，目
 
 ## :trophy:结尾
 
-<font color=chocolate>欢迎关注微信公众号：小狮子前端Vue</font>
+<font color=chocolate>欢迎关注微信公众号：小狮子前端</font>
 
 ![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20201202223856.jpg)
 
