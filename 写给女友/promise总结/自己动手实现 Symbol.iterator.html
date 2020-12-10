@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+let arr = [1, 2, 3, 4]
+
+function makeIterator(arr){
+  let index=0;
+  return{
+    next(){
+      if(index<arr.length){
+        return{
+          value: arr[index++], done: false
+        }
+      }
+      return {value: undefined, done: true};
+    }
+  }
+}
+let iter = makeIterator(arr);
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+
+    </script>
+  </body>
+</html>
