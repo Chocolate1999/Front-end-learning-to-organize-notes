@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+var obj = { 
+  a: 1,
+  b: 2,
+  c: 3,
+  [Symbol.iterator](){
+    let index = 0;
+    let map = new Map([['a',1],['b',2],['c',3]]);
+    return{
+      next(){
+        // 获取键值对
+        let mapEntries = [...map.entries()];
+        if(index < map.size){
+          return{
+            value: mapEntries[index++], done: false
+          }
+        }
+        return {value: undefined, done: true};
+      }
+    }
+  }
+};
+// let iter = obj[Symbol.iterator]();
+// console.log(iter.next());
+// console.log(iter.next());
+// console.log(iter.next());
+// console.log(iter.next());
+for(let item of obj){
+  console.log(item);
+}
+    </script>
+  </body>
+</html>
