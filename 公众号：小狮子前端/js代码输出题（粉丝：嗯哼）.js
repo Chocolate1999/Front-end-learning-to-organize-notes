@@ -3,8 +3,7 @@ function test(arg) {
   return this;
 }
 
-var x = test(5);
+var a = test(5);
 var y = test(6);
-
-console.log(x.x);
+console.log(a.x);
 console.log(y.x);
