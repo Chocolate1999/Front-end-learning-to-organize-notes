@@ -21,9 +21,9 @@ https://yangchaoyi.vip/iBook/ （基于vuepress搭建的前端学习笔记，目
 
 ##  :sunny:小狮子前端Vue进阶小册 食堂开饭啦
 
-![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20200902104534.png)
+![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20201229201533.png)
 
-<a href="https://yangchaoyi.vip/posts/20200902/">秋招投递清单传送门</a>
+<a href="https://chocolate.blog.csdn.net/article/details/111936965">「成长之路」挥手2020，Chocolate 同学年度总结，所遇 | 所思 | 所学 | 所悟（年度征文）</a>
 
 ## :rabbit2:仓库内容
 
