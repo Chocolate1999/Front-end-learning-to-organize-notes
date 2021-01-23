@@ -12,21 +12,27 @@ var obj = {
   }
 }
 
-function deepClone(origin){
-  if(origin == undefined || typeof origin !== 'object'){
+function deepClone(origin, hashMap = new WeakMap()) {
+  if (origin == undefined || typeof origin !== 'object') {
     return origin;
   }
 
-  if(origin instanceof Date){
+  if (origin instanceof Date) {
     return new Date(origin);
   }
-  if(origin instanceof RegExp){
+  if (origin instanceof RegExp) {
     return new RegExp(origin);
   }
+  const hashKey = hashMap.get(origin);
+  if (hashKey) {
+    return hashKey;
+  }
+
   const target = new origin.constructor();
-  for(let k in origin){
-    if(origin.hasOwnProperty(k)){
-      target[k] = deepClone(origin[k]);
+  hashMap.set(origin, target);
+  for (let k in origin) {
+    if (origin.hasOwnProperty(k)) {
+      target[k] = deepClone(origin[k], hashMap);
     }
   }
   return target;
@@ -34,4 +40,4 @@ function deepClone(origin){
 
 const newObj = deepClone(obj);
 newObj.info.hobby[2].a = 123;
-console.log(obj,newObj);
+console.log(obj, newObj);
