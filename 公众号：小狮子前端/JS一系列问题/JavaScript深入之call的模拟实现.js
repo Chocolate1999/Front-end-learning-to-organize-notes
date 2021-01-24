@@ -1,4 +1,3 @@
-// 第二版
 Function.prototype.call2 = function (context) {
     // console.log(context); // fpp
     context.fn = this;
