@@ -1,4 +1,4 @@
-Function.prototype.call2 = function (context = window) {
+Function.prototype.myCall = function (context = window) {
     // console.log(context); // foo
     context.fn = this;
     // console.log(this); // bar:function
@@ -22,7 +22,7 @@ function bar(name, age) {
     console.log(this.value);
 }
 
-bar.call2(foo, 'kevin', 18);
+bar.myCall(foo, 'kevin', 18);
 // kevin
 // 18
 // 1
