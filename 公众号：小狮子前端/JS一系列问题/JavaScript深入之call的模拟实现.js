@@ -4,7 +4,7 @@ Function.prototype.call2 = function (context) {
     // console.log(this); // bar:function
     var args = [];
     for (var i = 1, len = arguments.length; i < len; i++) {
-        args.push('arguments[' + i + ']');
+        args.push(arguments[i]);
     }
     let result = context.fn(...args);
     delete context.fn;
