@@ -1,4 +1,4 @@
-Function.prototype.call2 = function (context) {
+Function.prototype.call2 = function (context = window) {
     // console.log(context); // foo
     context.fn = this;
     // console.log(this); // bar:function
