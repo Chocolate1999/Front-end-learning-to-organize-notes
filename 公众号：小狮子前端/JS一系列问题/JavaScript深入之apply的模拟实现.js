@@ -1,17 +1,6 @@
 Function.prototype.myApply = function (context = window, arr) {
   context.fn = this;
-  var result;
-  if (!arr) {
-    result = context.fn();
-  }
-  else {
-    var args = [];
-    for (var i = 0, len = arr.length; i < len; i++) {
-      args.push(arr[i]);
-    }
-    result = context.fn(...args);
-  }
-
+  var result = context.fn(...arr);
   delete context.fn
   return result;
 }
