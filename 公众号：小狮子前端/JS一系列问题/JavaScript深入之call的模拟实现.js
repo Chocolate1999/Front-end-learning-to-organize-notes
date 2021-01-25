@@ -2,11 +2,9 @@ Function.prototype.myCall = function (context = window) {
     // console.log(context); // foo
     context.fn = this;
     // console.log(this); // bar:function
-    var args = [];
-    for (var i = 1, len = arguments.length; i < len; i++) {
-        args.push(arguments[i]);
-    }
-    let result = context.fn(...args);
+    var arr = [...arguments];
+    arr.shift();
+    let result = context.fn(...arr);
     delete context.fn;
     return result;
 }
