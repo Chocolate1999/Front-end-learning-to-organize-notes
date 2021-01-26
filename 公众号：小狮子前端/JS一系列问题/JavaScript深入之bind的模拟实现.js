@@ -14,13 +14,14 @@ Function.prototype.myBind = function (context = window) {
     //不能改变this指向
     if (this instanceof fn) {
       return new that(...args, ...arguments);
+      // return that.apply(this, args.concat(...arguments));
     } else {
       return that.apply(context, args.concat(...arguments));
     }
   }
   //维护原型
-  tmp.prototype = that.prototype;
-  fn.prototype = new tmp();
+  // tmp.prototype = that.prototype;
+  // fn.prototype = new tmp();
   //返回函数
   return fn;
 }
@@ -34,10 +35,15 @@ function bar(name, age) {
   console.log(age);
   console.log(this.value);
 }
+bar.prototype.say = function () {
+  console.log('love hearling');
+}
 let fn = bar.myBind(foo, 'Chocolate', 18);
-fn();
-console.log(foo);
-
+let ans = new fn();
+ans.say();
+console.log(ans);
+// fn();
+// console.log(foo);
 // Chocolate
 // 18
 // 1
