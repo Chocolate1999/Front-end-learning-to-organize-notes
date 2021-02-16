@@ -19,66 +19,6 @@ https://yangchaoyi.vip/iBook/ （基于vuepress搭建的前端学习笔记，目
 为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
 
 
-##  :sunny:小狮子前端Vue进阶小册 食堂开饭啦
-
-![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20201229201533.png)
-
-<a href="https://chocolate.blog.csdn.net/article/details/111936965">「成长之路」挥手2020，Chocolate 同学年度总结，所遇 | 所思 | 所学 | 所悟（年度征文）</a>
-
-## :rabbit2:仓库内容
-
-| Ⅰ| Ⅱ|Ⅲ|Ⅳ|  Ⅴ | Ⅵ| Ⅶ| Ⅷ | Ⅸ|
-|:--------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/HTML">HTML 总结</a> | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/CSS">CSS 总结</a>   |  <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/JS">JS 总结</a> |  <a href="https://yangchaoyi.vip/tags/%E9%9D%A2%E8%AF%95/">面试经历</a>  | <a href="https://github.com/Chocolate1999/leetcode-javascript">LeetCode刷题 </a>    | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Vue%E5%8F%8A%E6%BA%90%E7%A0%81">Vue及源码</a> |    <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7">面试技巧</a>  | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93">工具总结</a>|   <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/tree/master/Interview%20Questions">前端全家桶 </a>  | 
-
-## :seedling:前端下饭厨师长の自我介绍
-大家好，我是 **Chocolate**，计算机领域的 `ycy`，CSDN博客专家，平常习惯就是写博客，总结所学知识，因为我觉得计算机领域知识特别多，并且更新速度很快，今天才学的东西明天就更新换代都是可能的，并且知识如果不长期巩固是容易遗忘的，写博客总结就是一个很好的输入输出过程。
-
- 考虑了许久之后，还是申请了这个专栏。与其说是专栏，我还是更喜欢叫它小册，因为我更想让它成为一本书籍。那么你食用这本小册能够学到什么？
-
-
-<a href="https://blog.csdn.net/weixin_42429718/article/details/107134349">小狮子前端Vue进阶小册 开通食用指北</a>
-
-## :pushpin:小册介绍
-
-本小册用于学习知识整理，并不是只关于前端知识，涉及面很广：
-
-- 1、Vue源码分析
-- 2、手把手教 保姆级 撸代码
-- 3、无惧面试，学以致用，继承创新
-- 4、谈谈前端发展与学习心得
-- 5、手写源码技术栈，附上详细注释
-- 6、从源码中学习设计模式，一举两得
-- 7、编程思想的提升及代码质量的提高
-- 8、通过分析源码学习架构，看看优秀的框架
-- 9、项目实战开发
-- 10、面试准备，完善个人简历
-- 11、经典面试题整理
-- 12、算法刷题题库思路整理
-- 13、面试经历分享
-- 14、好书推荐，日常生活记录
-- 15、未完待续...
-
-
-## :loudspeaker:适宜人群
--  希望入门前端、寻找学习资料的小白
-- 具备基本的 JavaScript、HTML 等前端技能，希望进一步提升自己的开发者
-- 技术栈主要为 Vue 的程序员们
-- 希望寻找一个更好工作机会的开发者
-- 希望了解前端的大致知识框架的开发者
-- 希望了解大厂常考知识点的开发者
-- 为面试实习找工作做准备的求职者
-- 需要灵感的面试官
-- 愿意为博主打赏，请博主冰阔落的 dalao 们
-
-## :balloon: 购买须知
-本小册每篇博文几乎是上万字，预计会发布50篇左右原创文章。
-全部文章预计 2021年6月23日之后不再更新；
-购买用户可享有小册永久的阅读权限；
-本小册为虚拟内容服务，一经购买成功概不退款；
-小册版权归作者所有，任何机构、媒体、网站或个人未经本网协议授权不得转载、链接、转贴或以其他方式复制发布/发表，违者将依法追究责任；
-在小册阅读过程中，如有任何问题，可以私信博主。
-
 
 ## :tada:项目经历
 
