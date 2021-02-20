@@ -11,6 +11,8 @@
 ## :loudspeaker:公告
 感谢访问本站，若喜欢请收藏，star支持一下 ✿✿ヽ(°▽°)ノ✿
 
+> 访问 <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/issues">522道腾讯大厂真题汇总</a>——涵盖各类前端的真题，可根据不同的 `Label` 查看对应内容，助你春招秋招牛气冲天~
+
 ## :snowman:笔记网站（更新）
 
 https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面试记录）
@@ -37,6 +39,7 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 | hexo-blog-lionkk（基于hexo-butterfly:butterfly:主题魔改博客源码开放）| 2020.04-2020.07| <a href="https://github.com/Chocolate1999/hexo-blog-lionkk">传送门</a> |
 | vue-shop（ :cat: Vue全家桶开发电商管理系统（Element-UI 重制上线版））| 2020.06-2020.07|  <a href="https://github.com/Chocolate1999/vue-shop">传送门</a>|
 | Vue-MVVM（:star:剖析vue实现原理，动手实现一个简单版的mvvm:+1:）|  2020.07 | <a href="https://github.com/Chocolate1999/Vue-MVVM">传送门</a> |   
+| 522道腾讯大厂真题（:star:涵盖整个春招秋招面试:+1:）|  2021.02 | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/issues">传送门</a> |   
 
 
 ##  :sunny:小狮子
@@ -46,8 +49,8 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 <a href="https://chocolate.blog.csdn.net/article/details/111936965">「成长之路」挥手2020，Chocolate 同学年度总结，所遇 | 所思 | 所学 | 所悟（年度征文）</a>
 
 
-## 👍Chocolate 同学前端学习笔记大汇总
->在这里整合一下输出的文章，不定期更新，以下为部分优质文章，所有文章均首发于掘金「一百个Chocolate」
+## 👍Chocolate 与 HearLing 同学前端学习笔记大汇总
+>在这里整合一下输出的文章，不定期更新，以下为部分优质文章，所有文章均首发于掘金「一百个Chocolate」与「HearLing」
 
 
 ### JS
@@ -58,17 +61,40 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 - <a href="https://juejin.cn/post/6902942813097459720">「高频面试题」女友：消息队列 和 事件循环系统终于弄明白了！（内附思维导图）</a>
 - <a href="https://juejin.cn/post/6906106922605543432">「星辰大海」你可能需要知道的 promise 知识的总结（内附思维导图）</a>
 - <a href="https://juejin.cn/post/6924218259302694919">某跳动面试官：你再说说微信扫码登录背后的实现原理？（以某东为例）</a>
+- <a href="https://juejin.cn/post/6925599792814882829">JS手撕，经典面试题</a>
 
+
+### CSS
+- <a href="https://juejin.cn/post/6924228588510281735">「面试」前端高频CSS面试题及答案</a>
 
 ### 算法
 - <a href="https://juejin.cn/post/6926801566699618312">🐮写给零基础的前端算法入门指南，acmer带女友刷80+【栈与队列与链表篇】｜牛气冲天新年征文</a>
 - <a href="https://juejin.cn/post/6929755669683765261">🐮写给零基础的前端算法入门指南，acmer带女友刷80+【递归与回溯篇】｜牛气冲天新年征文</a>
+- <a href="https://juejin.cn/post/6906316759465197581">「JS刷题之路-栈」和我一起系统的刷题吧（内附思维导图）</a>
+- <a href="https://juejin.cn/post/6908273702769524744">「JS刷题之路-递归回溯（上篇）」和我一起系统的刷题吧（内附思维导图）</a>
+
+### Vue必知必会
+
+- <a href="https://juejin.cn/post/6930897845369356295">🐮化身面试官出30+Vue面试题，超级干货（附答案）｜牛气冲天新年征文</a>
+
 
 ### 学习Vue源码
 
 - <a href="https://juejin.cn/post/6854573209673531400">（1.8w字，建议收藏）Vue源码解析—动手实现简化版MVVM</a>
 - <a href="https://juejin.cn/post/6877142396967223304">【源码篇：总结与思考】虚拟节点与DOM Diff算法源码实现</a>
 - <a href="https://juejin.cn/post/6882210480040263693">「查漏补缺」Vue2.0 源码重写『数据劫持』【面试必备】</a>
+
+
+### 计算机网络
+- <a href="https://juejin.cn/post/6915362842212302862">「计算机网络」前端必备知识，看到就是赚到系列（上）</a>
+- <a href="https://juejin.cn/post/6916318564966203400">「计算机网络」前端必备知识，看到就是赚到系列（下）</a>
+
+### 浏览器工作原理
+- <a href="https://juejin.cn/post/6902032954034225159">「导航渲染流程」你真的知道从输入URL到页面展示发生了什么吗？（内附思维导图）</a>
+- <a href="https://juejin.cn/post/6900916440845516814">「浏览器安全」你可能需要的一份浏览器安全的总结（内附思维导图）</a>
+
+### 服务外包
+- <a href="https://juejin.cn/post/6925000746236641287">从大一到大三，我与服务外包大赛🏆</a>
 
 ### 小册
 
