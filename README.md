@@ -13,6 +13,10 @@
 
 > 访问 <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/issues">522道腾讯大厂真题汇总</a>——涵盖各类前端的真题，可根据不同的 `Label` 查看对应内容，助你春招秋招牛气冲天~
 
+![](https://cdn.jsdelivr.net/gh/chocolate1999/cdn/img/20210623105109.png)
+
+>考虑图片过大不太清晰问题，在公众号【小狮子前端】，已经提前为小伙伴们准备好了最全资料（包括思维导图、前端电子书籍、博客笔记等）
+
 ## :snowman:笔记网站（更新）
 
 https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面试记录）
