@@ -133,6 +133,9 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 
 目前已将大学两年学习笔记整理成 PDF，没有什么获取要求，只要是狮粉都可以获取哈，进入上述群号在群文件即可下载哈，目前已提供 4 种风格的文档。
 
+
+bilibili 介绍视频：https://www.bilibili.com/video/BV1Sh411p7Ko
+
 ![image](https://user-images.githubusercontent.com/61035508/133955818-f97f0a69-490d-48b3-8de5-974e0a2e2506.png)
 
 ![image](https://user-images.githubusercontent.com/61035508/133955838-f8c98ca3-9ca6-4177-9cf7-e615607efdae.png)
