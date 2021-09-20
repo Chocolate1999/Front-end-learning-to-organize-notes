@@ -2,7 +2,7 @@
 ##  :sunny:Front-end-learning-to-organize-notes
 
 <p align="center">
-<a href="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes"><img src="http://hits.dwyl.com/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="HitCount"></a><a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a><img src="https://camo.githubusercontent.com/cb8cb80af654f3dae14a4aa62e44bf62f16953d6/68747470733a2f2f6a617977636a6c6f76652e6769746875622e696f2f73622f6c616e672f6368696e6573652e737667"></img></p>
+<a href="https://www.gnu.org/licenses/"> <img src="https://img.shields.io/github/license/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="License"></a><a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/network"> <img src="https://img.shields.io/github/forks/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub forks"></a> <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/stargazers"> <img src="https://img.shields.io/github/stars/Chocolate1999/Front-end-learning-to-organize-notes.svg" alt="GitHub stars"></a><img src="https://camo.githubusercontent.com/cb8cb80af654f3dae14a4aa62e44bf62f16953d6/68747470733a2f2f6a617977636a6c6f76652e6769746875622e696f2f73622f6c616e672f6368696e6573652e737667"></img></p>
 
 ## :seedling:仓库地址
 
@@ -130,6 +130,13 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 ## :trophy:结尾
 
 一起交流学习可以加企鹅群【666151691】
+
+目前已将大学两年学习笔记整理成 PDF，没有什么获取要求，只要是狮粉都可以获取哈，进入上述群号在群文件即可下载哈，目前已提供 4 种风格的文档。
+
+![image](https://user-images.githubusercontent.com/61035508/133955818-f97f0a69-490d-48b3-8de5-974e0a2e2506.png)
+
+![image](https://user-images.githubusercontent.com/61035508/133955838-f8c98ca3-9ca6-4177-9cf7-e615607efdae.png)
+
 
 <font color=chocolate>欢迎关注微信公众号：小狮子前端</font>
 
