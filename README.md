@@ -24,6 +24,15 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
 
 
+> 由 Chocolate 和 HearLing 一起搭建d的一个免费的文档网站，一站式获取前端知识笔记大全，欢迎访问：https://docs.yangchaoyi.vip/ 
+
+
+>这是我们创建的知识星球，名额有限，仅限前 200 位狮粉加入，想要加入的小伙伴可不要错过机会哈，之后可能随着沉淀的知识文档越来越多还会涨价，所以越早加入越香，仅限这次就**恢复原价**：
+
+
+
+<img src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn@master/img/202205052157810.png" width="320px"/>
+
 
 
 
