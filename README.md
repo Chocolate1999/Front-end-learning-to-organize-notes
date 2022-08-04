@@ -45,6 +45,7 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 | vue-shop（ :cat: Vue全家桶开发电商管理系统（Element-UI 重制上线版））| 2020.06-2020.07|  <a href="https://github.com/Chocolate1999/vue-shop">传送门</a>|
 | Vue-MVVM（:star:剖析vue实现原理，动手实现一个简单版的mvvm:+1:）|  2020.07 | <a href="https://github.com/Chocolate1999/Vue-MVVM">传送门</a> |   
 | 522道腾讯大厂真题（:star:涵盖整个春招秋招面试:+1:）|  2021.02 | <a href="https://github.com/Chocolate1999/Front-end-learning-to-organize-notes/issues">传送门</a> |   
+| 基于 Next.js 和 Tailwind CSS 个人博客项目（The most beautiful blog in modern times） |  2022.08 - 至今 | <a href="https://github.com/Chocolate1999/nextjs-tailwind-blog">传送门</a> |   
 
 
 ##  :sunny:小狮子
