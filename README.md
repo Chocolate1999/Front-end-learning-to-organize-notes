@@ -24,15 +24,7 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 为了让您更好的阅读本仓库笔记，考虑还是建了个人网站，本仓库内容陆续都会更新到网站上，你可以根据分类找到你想阅读的文章，隆重感谢给本仓库点 Star 的小伙伴!
 
 
-> 由 Chocolate 和 HearLing 一起搭建d的一个免费的文档网站，一站式获取前端知识笔记大全，欢迎访问：https://docs.yangchaoyi.vip/ 
-
-
->这是我们创建的知识星球，名额有限，仅限前 200 位狮粉加入，想要加入的小伙伴可不要错过机会哈，之后可能随着沉淀的知识文档越来越多还会涨价，所以越早加入越香，仅限这次就**恢复原价**：
-
-
-
-<img src="https://cdn.jsdelivr.net/gh/Chocolate1999/cdn@master/img/202205052157810.png" width="320px"/>
-
+> 由 Chocolate 和 HearLing 一起搭建的一个免费的文档网站，一站式获取前端知识笔记大全，欢迎访问：https://docs.yangchaoyi.vip/ 
 
 
 
@@ -139,15 +131,6 @@ https://yangchaoyi.vip/ （基于hexo-butterfly主题搭建的博客，整理面
 ## :trophy:结尾
 
 一起交流学习可以加企鹅群【666151691】
-
-目前已将大学两年学习笔记整理成 PDF，没有什么获取要求，只要是狮粉都可以获取哈，进入上述群号在群文件即可下载哈，目前已提供 4 种风格的文档。
-
-
-bilibili 介绍视频：https://www.bilibili.com/video/BV1Sh411p7Ko
-
-![image](https://user-images.githubusercontent.com/61035508/133955818-f97f0a69-490d-48b3-8de5-974e0a2e2506.png)
-
-![image](https://user-images.githubusercontent.com/61035508/133955838-f8c98ca3-9ca6-4177-9cf7-e615607efdae.png)
 
 
 <font color=chocolate>欢迎关注微信公众号：小狮子前端</font>
